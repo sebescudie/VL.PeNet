@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="OQTURL4CMwnMQcBRiehziq" LanguageVersion="2025.7.0-0413-g101b9a7a4c" Version="0.128">
+  <NugetDependency Id="LhgL7EDV6VALTWWbIrPML5" Location="VL.CoreLib" Version="2025.7.0-0413-g101b9a7a4c" />
+  <Patch Id="Al8VJPgkGBzLOYQTCm3tKL">
+    <Canvas Id="UMsHjDYIa8yMJmLndPjYh3" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="O9VrYnxEtEMNDSrwicJRkx">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="H3ZDsLB1IO3ND8EpytyPRA">
+        <Canvas Id="B6TPzebyygfOElzn8LDTZN" CanvasType="Group">
+          <Node Bounds="241,190,65,19" Id="PRoZMBhJ9NJLIFiEYUhML0">
+            <p:NodeReference LastCategoryFullName="PE" LastDependency="VL.PeNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PEReader" />
+            </p:NodeReference>
+            <Pin Id="N5TCqkkC7VOPXVvZljAvyh" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ELP2meQIgJTPAl9BleJBBI" Name="Path" Kind="InputPin" DefaultValue="..\..\VL.FLOSS\bin\floss.exe" />
+            <Pin Id="C2GtSLkBCJ5N1CgCJS4Y1M" Name="Read" Kind="InputPin" />
+            <Pin Id="SoCUPstP0kgNDrgkCTdddj" Name="PE File" Kind="OutputPin" />
+            <Pin Id="QYl2LAUKvT6N66SzRSYGD8" Name="SHA 256" Kind="OutputPin" />
+            <Pin Id="NkxfDB0OrGxL5xjxWpG7Xy" Name="Is PE File" Kind="OutputPin" />
+            <Pin Id="GlUaC0GKc47NyEe67B1vib" Name="File Size" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FENVU6gtoHdOYwSl8OOUfW" Comment="Is PE File" Bounds="283,259,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GJBAdVWd9A0QVYFMqbSk1O" Comment="Read" Bounds="303,171,35,15" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NcooO1hRmBKPOoskvmUXni" Comment="SHA 256" Bounds="263,290,58,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DAtUpO4f3SPMkGhg57vmzB" Comment="Path" Bounds="243,130,140,15" ShowValueBox="true" isIOBox="true" Value="C:\Users\seb\Downloads\inbox\rdfc.exe">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="241,340,102,26" Id="I4I9hEFyFdvO0E9zcpRuBZ">
+            <p:NodeReference LastCategoryFullName="PE" LastDependency="VL.PeNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ImportedFunctions" />
+            </p:NodeReference>
+            <Pin Id="GgqUNbpxKNZMLyXLGAQYv5" Name="Input" Kind="InputPin" />
+            <Pin Id="LVJwi7iGIEnMKgpnp4xWdJ" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="NB4k440jpnIMkTNQMEl3nO" Name="Imported Functions" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="441,340,54,26" Id="BXqiNOpMwYBOwi2R2DczK5">
+            <p:NodeReference LastCategoryFullName="PE.PeFile.FileHeader" LastDependency="VL.PeNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="General" />
+            </p:NodeReference>
+            <Pin Id="BiK4ihnaQpYOUdIqxW9Sr5" Name="PE File" Kind="InputPin" />
+            <Pin Id="Aw5TpNAdd8RLk1BRPuRoHX" Name="Machine Type" Kind="OutputPin" />
+            <Pin Id="Q1LfoNYU6rwLqXyjcRZaC5" Name="Compiler Stamp" Kind="OutputPin" />
+            <Pin Id="CyuhvqoazwlOHFre9U82hm" Name="Number Of Sections" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FJK14ZZY5AzPwRL0IYcmWb" Comment="Machine Type" Bounds="443,450,111,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="U5YbW181fV9NgJdCfkz76k" Comment="Compiler Stamp" Bounds="467,420,94,16" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GTXW7Yd7xwoNmXfvppwiF6" Comment="Number Of Sections" Bounds="492,390,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QLjVQAVgepXNMxbYcHdL93" Comment="" Bounds="243,391,171,101" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="677,340,85,26" Id="IMXYjr6P2s6OShJsr1w2e0">
+            <p:NodeReference LastCategoryFullName="PE.PeFile.OptionalHeader" LastDependency="VL.PeNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="OptionalHeader" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="General" />
+            </p:NodeReference>
+            <Pin Id="Tdx5J750QC5QOvz8XaLWxn" Name="Input" Kind="InputPin" />
+            <Pin Id="MXpPIrENsfZQQP9kFGEoJL" Name="Subsystem" Kind="OutputPin" />
+            <Pin Id="UZkr4KKr29oQO5cDow1ggB" Name="Magic" Kind="OutputPin" />
+            <Pin Id="Bhef5CIWbbCO7wQExrgpTM" Name="Size Of Code" Kind="OutputPin" />
+            <Pin Id="GxwLV5a8sd5QAZTcuCeUcW" Name="Linker Version" Kind="OutputPin" />
+            <Pin Id="Olud0vnicgQPNQSs26NZUa" Name="OS Version" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GoksuCbiDJuPRrnjeQafQx" Comment="Magic" Bounds="699,500,47,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="K7VhJj1vo7oNGJaP5frbNi" Comment="Size Of Code" Bounds="719,480,48,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PNYVxgTL39OLOPQD2ayZQL" Comment="Subsystem" Bounds="679,521,135,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ObNqSveVtbtPL9kayl1eh9" Comment="Linker Version" Bounds="739,450,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DBHeXocj4AAQJ2EmSuwMQ9" Comment="OS Version" Bounds="759,420,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DDMzofC4dDbMEFS34pDs4Q" Comment="File Size" Bounds="303,240,44,15" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="AYcD1Hjoe1wMkqGS0zYMwB" Name="Create" />
+        <Patch Id="VSJqsdnZ5inLKMDS2Gnm8Q" Name="Update" />
+        <ProcessDefinition Id="D01zd5AaQE8LSMDrgtAUw1">
+          <Fragment Id="QWNSq0Lj0w7NQNj8grUqjA" Patch="AYcD1Hjoe1wMkqGS0zYMwB" Enabled="true" />
+          <Fragment Id="Ir8JotfETusMhcUmOLg2CX" Patch="VSJqsdnZ5inLKMDS2Gnm8Q" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="F6vtjk7JQ9hMiikMfLgOTD" Ids="NkxfDB0OrGxL5xjxWpG7Xy,FENVU6gtoHdOYwSl8OOUfW" />
+        <Link Id="U805lLG26eOLJFvDq4w3BF" Ids="GJBAdVWd9A0QVYFMqbSk1O,C2GtSLkBCJ5N1CgCJS4Y1M" />
+        <Link Id="PqUgG0NXPMSMr1fXILXj6Q" Ids="QYl2LAUKvT6N66SzRSYGD8,NcooO1hRmBKPOoskvmUXni" />
+        <Link Id="Rdi1ZLMFEJZNpIFB8mkW4G" Ids="DAtUpO4f3SPMkGhg57vmzB,ELP2meQIgJTPAl9BleJBBI" />
+        <Link Id="IkAW8ki3sjyMfCDELUPStD" Ids="SoCUPstP0kgNDrgkCTdddj,GgqUNbpxKNZMLyXLGAQYv5" />
+        <Link Id="CFlwMNWEbVnN4zHkA4fCvT" Ids="SoCUPstP0kgNDrgkCTdddj,BiK4ihnaQpYOUdIqxW9Sr5" />
+        <Link Id="HVld83mLkhWNMSDHXDzc7L" Ids="Aw5TpNAdd8RLk1BRPuRoHX,FJK14ZZY5AzPwRL0IYcmWb" />
+        <Link Id="C25rLAapT3ZOIvZpoFb2PW" Ids="Q1LfoNYU6rwLqXyjcRZaC5,U5YbW181fV9NgJdCfkz76k" />
+        <Link Id="K2du4EC1B20Pn9yZjW8XCe" Ids="CyuhvqoazwlOHFre9U82hm,GTXW7Yd7xwoNmXfvppwiF6" />
+        <Link Id="EYkP6Nyc4whO7et1dBo6fF" Ids="NB4k440jpnIMkTNQMEl3nO,QLjVQAVgepXNMxbYcHdL93" />
+        <Link Id="IWBv5GBI9rYN7XLDtg69er" Ids="SoCUPstP0kgNDrgkCTdddj,Tdx5J750QC5QOvz8XaLWxn" />
+        <Link Id="KiXrjjhVO5BNIAjkYqordj" Ids="UZkr4KKr29oQO5cDow1ggB,GoksuCbiDJuPRrnjeQafQx" />
+        <Link Id="PmrfrZOU55uOVfp52qvvgP" Ids="Bhef5CIWbbCO7wQExrgpTM,K7VhJj1vo7oNGJaP5frbNi" />
+        <Link Id="Kq7rmJJnviSLu8wCPyOxJg" Ids="MXpPIrENsfZQQP9kFGEoJL,PNYVxgTL39OLOPQD2ayZQL" />
+        <Link Id="UCliQ9Y4rWhQKPnaCu1BMB" Ids="GxwLV5a8sd5QAZTcuCeUcW,ObNqSveVtbtPL9kayl1eh9" />
+        <Link Id="JAKVqjr7pdfLE4kqTPDWAI" Ids="Olud0vnicgQPNQSs26NZUa,DBHeXocj4AAQJ2EmSuwMQ9" />
+        <Link Id="KbFtuK29PgTOiqFllSlJbM" Ids="GlUaC0GKc47NyEe67B1vib,DDMzofC4dDbMEFS34pDs4Q" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="UAkG8EehfrOMcQucPwCVlD" Location="VL.PeNet" Version="0.0.0" />
+</Document>
