@@ -85,6 +85,15 @@
           <Pad Id="ObNqSveVtbtPL9kayl1eh9" Comment="Linker Version" Bounds="739,450,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="DBHeXocj4AAQJ2EmSuwMQ9" Comment="OS Version" Bounds="759,420,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="DDMzofC4dDbMEFS34pDs4Q" Comment="File Size" Bounds="303,240,44,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="872,340,86,26" Id="TlEOubQrqDiMefNSiYLslI">
+            <p:NodeReference LastCategoryFullName="PE.PeFile.Sections" LastDependency="VL.PeNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SectionHeaders" />
+            </p:NodeReference>
+            <Pin Id="TNkeGXwbDB0NfOicaxxplS" Name="Input" Kind="InputPin" />
+            <Pin Id="Sh02kR3nFMyOVWL4fcndln" Name="Output" Kind="OutputPin" />
+            <Pin Id="NGCCeEMqtuAPJuQ5nal2Fe" Name="Image Section Headers" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="AYcD1Hjoe1wMkqGS0zYMwB" Name="Create" />
         <Patch Id="VSJqsdnZ5inLKMDS2Gnm8Q" Name="Update" />
@@ -109,6 +118,7 @@
         <Link Id="UCliQ9Y4rWhQKPnaCu1BMB" Ids="GxwLV5a8sd5QAZTcuCeUcW,ObNqSveVtbtPL9kayl1eh9" />
         <Link Id="JAKVqjr7pdfLE4kqTPDWAI" Ids="Olud0vnicgQPNQSs26NZUa,DBHeXocj4AAQJ2EmSuwMQ9" />
         <Link Id="KbFtuK29PgTOiqFllSlJbM" Ids="GlUaC0GKc47NyEe67B1vib,DDMzofC4dDbMEFS34pDs4Q" />
+        <Link Id="OgPoGju3yFIMrBnuR71L0f" Ids="SoCUPstP0kgNDrgkCTdddj,TNkeGXwbDB0NfOicaxxplS" />
       </Patch>
     </Node>
   </Patch>
