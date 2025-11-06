@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="CLRh2u2HIToMbCRU28eh3d" LanguageVersion="2025.7.0-0413-g101b9a7a4c" Version="0.128">
-  <NugetDependency Id="RcJLfYV00a0NrjbrL6aoqs" Location="VL.CoreLib" Version="2025.7.0-0413-g101b9a7a4c" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="CLRh2u2HIToMbCRU28eh3d" LanguageVersion="2025.7.1-0084-ga7be0d05a8" Version="0.128">
+  <NugetDependency Id="RcJLfYV00a0NrjbrL6aoqs" Location="VL.CoreLib" Version="2025.7.1-0084-ga7be0d05a8" />
   <Patch Id="LbwMTIGHyS5LWTN0TyQRfR">
     <Canvas Id="QVOpFaieE77OfVUX2KoiFJ" DefaultCategory="PE" CanvasType="FullCategory">
       <!--
@@ -14,7 +14,7 @@
         </p:NodeReference>
         <Patch Id="SSTi5QEwiLVMRpW4jwe02i">
           <Canvas Id="So86FWZ2H00O0j6lczrwsp" CanvasType="Group">
-            <Node Bounds="715,467,530,340" Id="PDWiIg2LLx8OeBzWxB7rYS">
+            <Node Bounds="715,467,558,400" Id="PDWiIg2LLx8OeBzWxB7rYS">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -42,7 +42,7 @@
                   <Pin Id="AmxJVRI6CcgPXgVKfbeu69" Name="Input" Kind="StateInputPin" />
                   <Pin Id="QXWqg1MPRFtPTN0KkmmDzp" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="738,615,492,172" Id="N1NFoIEZwzzMm6BNgo0Vj9">
+                <Node Bounds="738,675,523,172" Id="N1NFoIEZwzzMm6BNgo0Vj9">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Primitive" />
@@ -52,7 +52,7 @@
                   <Patch Id="QVvsROCXkcAPABpknQ4vl2" ManuallySortedPins="true">
                     <Patch Id="UeiXVntAixvMP1kLtQ8Hpi" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="E3aNw7mfkyNLcO4ogqAoRy" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="750,640,46,26" Id="PhZjPFAEXvCNQSRweKI2ES">
+                    <Node Bounds="750,700,46,26" Id="PhZjPFAEXvCNQSRweKI2ES">
                       <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll" OverloadStrategy="UserSelectedPins">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="PeFile" />
@@ -68,7 +68,7 @@
                       <Pin Id="O77pVtkmbTZQcZXjPJ5713" Name="Pe File" Kind="InputPin" />
                       <Pin Id="ERfSj8qnp95O8pwTm43aeH" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="825,650,50,19" Id="JFsfJ7A0BnRM6Htx941A9a">
+                    <Node Bounds="825,710,50,19" Id="JFsfJ7A0BnRM6Htx941A9a">
                       <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll" OverloadStrategy="UserSelectedPins">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="PeFile" />
@@ -84,7 +84,7 @@
                       <Pin Id="F7tECj5RrrCLQDgz9MZyB9" Name="File" Kind="InputPin" />
                       <Pin Id="JLl8eU0Kq4aLrl4jcI61Sk" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="884,725,50,26" Id="MhHTAX7ETcAPW1uMOcBkti">
+                    <Node Bounds="884,785,50,26" Id="MhHTAX7ETcAPW1uMOcBkti">
                       <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Sha256" />
@@ -93,7 +93,7 @@
                       <Pin Id="EgXqUnByyswLt7chrFpnWv" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="N8zj5M2Est1OHMNxVTG7Ge" Name="Sha 256" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1164,725,50,26" Id="JNRcW31Ls1mNiv8jQQHoSf">
+                    <Node Bounds="1164,785,50,26" Id="JNRcW31Ls1mNiv8jQQHoSf">
                       <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="PeFile" />
@@ -104,14 +104,14 @@
                       <Pin Id="PedPtsriQ6jMK2VuoOu4jB" Name="File Size" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="DmorBRm0vuLPnluKjyHyPi" Bounds="827,781" Alignment="Bottom" />
-                  <ControlPoint Id="RUDwEzqOzXSPayhNz86kTN" Bounds="936,621" Alignment="Top" />
-                  <ControlPoint Id="D3zqRfHr6QLPRrmd8in6yB" Bounds="931,781" Alignment="Bottom" />
-                  <ControlPoint Id="PD6oGmQi70ZLocYHA6Jr5t" Bounds="976,621" Alignment="Top" />
-                  <ControlPoint Id="MC46GR0ZDBjLEMVstffadd" Bounds="1211,781" Alignment="Bottom" />
-                  <ControlPoint Id="RWKspmFQbGRMHIZAvEJLck" Bounds="1211,621" Alignment="Top" />
-                  <ControlPoint Id="CHV9RNXYdtgQEatVkopjLl" Bounds="752,781" Alignment="Bottom" />
-                  <ControlPoint Id="IIG0ICSxneIQUpBTZHlM66" Bounds="752,621" Alignment="Top" />
+                  <ControlPoint Id="DmorBRm0vuLPnluKjyHyPi" Bounds="827,841" Name="Is PE" Alignment="Bottom" />
+                  <ControlPoint Id="RUDwEzqOzXSPayhNz86kTN" Bounds="936,681" Name="Is PE" Alignment="Top" />
+                  <ControlPoint Id="D3zqRfHr6QLPRrmd8in6yB" Bounds="931,841" Name="SHA 256" Alignment="Bottom" />
+                  <ControlPoint Id="PD6oGmQi70ZLocYHA6Jr5t" Bounds="976,681" Name="SHA 256" Alignment="Top" />
+                  <ControlPoint Id="MC46GR0ZDBjLEMVstffadd" Bounds="1211,841" Name="File Size" Alignment="Bottom" />
+                  <ControlPoint Id="RWKspmFQbGRMHIZAvEJLck" Bounds="1211,681" Name="File Size" Alignment="Top" />
+                  <ControlPoint Id="CHV9RNXYdtgQEatVkopjLl" Bounds="752,841" Name="PeFile" Alignment="Bottom" />
+                  <ControlPoint Id="IIG0ICSxneIQUpBTZHlM66" Bounds="770,681" Name="PeFile" Alignment="Top" />
                 </Node>
                 <Node Bounds="738,575,37,19" Id="K7zYLXLOl4DPrs6zT4Wxnh">
                   <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
@@ -121,15 +121,32 @@
                   <Pin Id="UOmzjBtJEvwLZwP5olMbig" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Em7uRf6LeddNNwfohdZr5Q" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Node Bounds="833,540,59,26" Id="JZXsZLEP88kQOdJprv8NRK">
+                  <p:NodeReference LastCategoryFullName="IO.Path" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FileExists" />
+                  </p:NodeReference>
+                  <Pin Id="Q0uqbDPymtDMIb4CquAxgF" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LixzFmW8EC0M5K3WxhNGSc" Name="Exists" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="738,610,100,19" Id="Q9CTRbB8hyUPW6fMlE9Eb2">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="AND" />
+                  </p:NodeReference>
+                  <Pin Id="RSnUmv20UvuPlKXVBuYUns" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TU2EFXnLWWpQWF71OUSIFz" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="Q21V5txNr9HOCYUEoweHlV" Name="Output" Kind="StateOutputPin" />
+                </Node>
               </Patch>
-              <ControlPoint Id="UuCaIUn48lzLaNovyWwUvc" Bounds="827,801" Alignment="Bottom" />
-              <ControlPoint Id="QgmC6QsFzBrOEtizYpQwre" Bounds="931,801" Alignment="Bottom" />
-              <ControlPoint Id="HW8THcm8sFnPK9Nw35wuQn" Bounds="1211,801" Alignment="Bottom" />
-              <ControlPoint Id="Al7CIsiPlOqOPnOL9dA5lN" Bounds="752,801" Alignment="Bottom" />
+              <ControlPoint Id="UuCaIUn48lzLaNovyWwUvc" Bounds="827,861" Alignment="Bottom" />
+              <ControlPoint Id="QgmC6QsFzBrOEtizYpQwre" Bounds="931,861" Alignment="Bottom" />
+              <ControlPoint Id="HW8THcm8sFnPK9Nw35wuQn" Bounds="1211,861" Alignment="Bottom" />
+              <ControlPoint Id="Al7CIsiPlOqOPnOL9dA5lN" Bounds="752,861" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="TiKb0SLYB2GMaV0Jl5se8V" Bounds="717,331" />
-            <ControlPoint Id="Q2Uqz7EzXDjNkeEVplhRau" Bounds="827,865" />
-            <Pad Id="AF4B3YATN3bPkgbSZ7aIGU" Comment="Dispose Cached Outputs" Bounds="1129,420,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+            <ControlPoint Id="Q2Uqz7EzXDjNkeEVplhRau" Bounds="827,925" />
+            <Pad Id="AF4B3YATN3bPkgbSZ7aIGU" Comment="Dispose Cached Outputs" Bounds="1270,420,35,15" ShowValueBox="true" isIOBox="true" Value="True">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -159,9 +176,9 @@
               <Pin Id="OANI7lkcuU9LoOG7XFtRK9" Name="Output" Kind="StateOutputPin" />
             </Node>
             <ControlPoint Id="PwbC1rSgj8vNbcbXAtmDcg" Bounds="790,330" />
-            <ControlPoint Id="KExjlcR150kPKP5ffw0f6n" Bounds="931,865" />
-            <ControlPoint Id="D334kcL3PbJQOQpyyoCFX9" Bounds="1211,870" />
-            <ControlPoint Id="OHrRWuaPHPgOFkSZo59rU6" Bounds="752,910" />
+            <ControlPoint Id="KExjlcR150kPKP5ffw0f6n" Bounds="931,925" />
+            <ControlPoint Id="D334kcL3PbJQOQpyyoCFX9" Bounds="1211,925" />
+            <ControlPoint Id="OHrRWuaPHPgOFkSZo59rU6" Bounds="752,925" />
           </Canvas>
           <Patch Id="KqKogI4rvFqOLOIlvca80l" Name="Create" />
           <Patch Id="GZjjnI27Hu5Nu71WhjTomV" Name="Update" ManuallySortedPins="true">
@@ -197,7 +214,6 @@
           <Link Id="DlbIMoUivmvQNERArk0q2k" Ids="TiKb0SLYB2GMaV0Jl5se8V,TlVRraAA9V6MjeCY1ORaW4" />
           <Link Id="FoK9pLESZkWPzq0HZ0XS1p" Ids="Ez4yQbo9wy7QasvCsLUexr,AmxJVRI6CcgPXgVKfbeu69" />
           <Link Id="U7qdklLuFlbLZsZqLWwHUg" Ids="QXWqg1MPRFtPTN0KkmmDzp,UOmzjBtJEvwLZwP5olMbig" />
-          <Link Id="DfeouWWn6F8MJWx9D6XCkl" Ids="Em7uRf6LeddNNwfohdZr5Q,DOhshXvRelQQPQsoufzzfB" />
           <Link Id="HrpXwLT20gRPvdwBL9NSMw" Ids="RUDwEzqOzXSPayhNz86kTN,DmorBRm0vuLPnluKjyHyPi" IsFeedback="true" />
           <Link Id="USeFXpNqn1uQVBbKajCGtO" Ids="JLl8eU0Kq4aLrl4jcI61Sk,DmorBRm0vuLPnluKjyHyPi" />
           <Link Id="DmC5gYqaerZPolDxXAWhyD" Ids="DmorBRm0vuLPnluKjyHyPi,UuCaIUn48lzLaNovyWwUvc" />
@@ -223,43 +239,27 @@
           <Link Id="AxhQ7M58JRbP5YADxSUlE8" Ids="CHV9RNXYdtgQEatVkopjLl,Al7CIsiPlOqOPnOL9dA5lN" />
           <Link Id="MRXuL1SQs9YOzxBMQ7jm3X" Ids="Al7CIsiPlOqOPnOL9dA5lN,OHrRWuaPHPgOFkSZo59rU6" />
           <Link Id="L6OHvGAYAjTLaXAcAiJMMM" Ids="OHrRWuaPHPgOFkSZo59rU6,RhLmVlR0KxuQFIHlMWuHFW" IsHidden="true" />
+          <Link Id="BGBAdiKlqRRPDK1cLcvzEr" Ids="TiKb0SLYB2GMaV0Jl5se8V,Q0uqbDPymtDMIb4CquAxgF" />
+          <Link Id="DPX3Dt7zk5uOhdrajTCZom" Ids="Em7uRf6LeddNNwfohdZr5Q,RSnUmv20UvuPlKXVBuYUns" />
+          <Link Id="Dvx7rrx4GtfNQw57Xsvszx" Ids="LixzFmW8EC0M5K3WxhNGSc,TU2EFXnLWWpQWF71OUSIFz" />
+          <Link Id="Jg8ZB3mOFWJLUJxLMaXxpn" Ids="Q21V5txNr9HOCYUEoweHlV,DOhshXvRelQQPQsoufzzfB" />
         </Patch>
       </Node>
-      <!--
-
-    ************************ ImportFunction ************************
-
--->
-      <Node Name="ImportFunction" Bounds="508,320" Id="IPk4AFKTtNDN4syCYokeIV">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="PeNet.Header.Pe" LastDependency="PeNet.dll">
-          <Choice Kind="TypeFlag" Name="ImportFunction" />
-          <FullNameCategoryReference ID="PeNet.Header.Pe" />
-          <AssemblyReference ID="PeNet.dll" />
-        </p:TypeAnnotation>
-        <Patch Id="VvPdaG7uPvuOisi67q7CHG">
-          <Canvas Id="KHyRMUVLANxL2FZFmXgUpY" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="UB0PXX6oVE8Pl8vHOVJ4De" IsHidden="true" />
-        </Patch>
-      </Node>
-      <Canvas Id="DIMdIXPl81VPc63zXNSAcN" Name="PeFile" Position="509,440">
-        <Canvas Id="HEjtICJgjciLJDKVQ0UJ5I" Name="ImportedFunctions" Position="457,300">
+      <Canvas Id="DIMdIXPl81VPc63zXNSAcN" Name="PeFile" Position="509,420">
+        <Canvas Id="HEjtICJgjciLJDKVQ0UJ5I" Name="ImportedFunctions" Position="452,300">
           <!--
 
     ************************ ImportedFunctions ************************
 
 -->
-          <Node Name="ImportedFunctions" Bounds="393,210,223,117" Id="RVOh5fk1HTZN7lGVw7Pyk1">
+          <Node Name="ImportedFunctions" Bounds="393,202,223,125" Id="RVOh5fk1HTZN7lGVw7Pyk1">
             <p:NodeReference>
               <Choice Kind="OperationDefinition" Name="Operation" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:NodeReference>
             <p:HideCategory p:Type="Boolean">false</p:HideCategory>
             <Patch Id="AhNdK8ar8OyLEdxPoIBtMT">
-              <Node Bounds="405,239,102,26" AutoConnect="true" Id="IpU31k7goPVM40VWCNYUQW">
+              <Node Bounds="405,239,102,26" Id="IpU31k7goPVM40VWCNYUQW">
                 <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
                   <Choice Kind="OperationNode" Name="ImportedFunctions" />
                   <FullNameCategoryReference ID="PeNet.PeFile" />
@@ -268,7 +268,6 @@
                 <Pin Id="FooJPYDD0M5OyqCIcokR0G" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="Frnhi0yJF09QU4mDMFrhmh" Name="Imported Functions" Kind="OutputPin" />
               </Node>
-              <Pin Id="U2ixFCqaYChMDFmTwC3cEd" Name="Input" Kind="InputPin" />
               <Pin Id="H9KKmQnJZRXNSOzlDg6qWT" Name="Output" Kind="OutputPin" Visibility="Optional" />
               <Pin Id="VDmwepE6RuROSp12mttjxT" Name="Imported Functions" Kind="OutputPin">
                 <p:TypeAnnotation LastCategoryFullName="Collections.Interfaces" LastDependency="VL.CoreLib.vl">
@@ -280,23 +279,47 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <ControlPoint Id="QLAJ3romXsPL6ifP3pOoRu" Bounds="504,290" />
-              <Link Id="Ckd35PgOa7rPBeTLWLjNpk" Ids="Frnhi0yJF09QU4mDMFrhmh,QLAJ3romXsPL6ifP3pOoRu" />
+              <ControlPoint Id="QLAJ3romXsPL6ifP3pOoRu" Bounds="504,310" />
               <Link Id="B5z0d9eFOPQPw7uFwBXdLT" Ids="QLAJ3romXsPL6ifP3pOoRu,VDmwepE6RuROSp12mttjxT" IsHidden="true" />
               <ControlPoint Id="UW6Mxgtpq9VO8Z6RgbgiCU" Bounds="407,310" />
               <Link Id="KDTAioBzkweN6GlLlmub8S" Ids="FooJPYDD0M5OyqCIcokR0G,UW6Mxgtpq9VO8Z6RgbgiCU" />
               <Link Id="HmR0I2yFCpVPANqQFTdOOK" Ids="UW6Mxgtpq9VO8Z6RgbgiCU,H9KKmQnJZRXNSOzlDg6qWT" IsHidden="true" />
+              <ControlPoint Id="OEDNXY3wCEbOFF3qhsVulh" Bounds="407,220" />
+              <Link Id="E97OefNfcFrPsQ5Yvm7RTC" Ids="OEDNXY3wCEbOFF3qhsVulh,F1FWzSectEeNeJ30IMsry9" />
+              <Pin Id="MR9iWdEE5vELlPPmrb1i5j" Name="Input" Kind="InputPin" />
+              <Link Id="F3JkyjDjsedNKpaeP2tIfd" Ids="MR9iWdEE5vELlPPmrb1i5j,OEDNXY3wCEbOFF3qhsVulh" IsHidden="true" />
+              <Link Id="ROM5AsE5dJvLpekuXoPEs4" Ids="Frnhi0yJF09QU4mDMFrhmh,QLAJ3romXsPL6ifP3pOoRu" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ImportFunction ************************
+
+-->
+          <Node Name="ImportFunction" Bounds="393,400" Id="U6Forl4SW1RM60dbLg6jBW">
+            <p:NodeReference>
+              <Choice Kind="ForwardDefinition" Name="Forward" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:TypeAnnotation LastCategoryFullName="PeNet.Header.Pe" LastDependency="PeNet.dll">
+              <Choice Kind="TypeFlag" Name="ImportFunction" />
+              <FullNameCategoryReference ID="PeNet.Header.Pe" />
+              <AssemblyReference ID="PeNet.dll" />
+            </p:TypeAnnotation>
+            <Patch Id="TuX39FcVanyMPAlUWoDwmw">
+              <Canvas Id="KQZ40Ts78DdLBFNEmNdrxj" CanvasType="Group" />
+              <ProcessDefinition Id="Q9KCKhLs6TdLj6JGWqbYrz" IsHidden="true" />
             </Patch>
           </Node>
         </Canvas>
-        <Canvas Id="B4OEt1vsB13MDiNZjlbsd6" Name="NTHeaders" Position="457,350">
+        <Canvas Id="B4OEt1vsB13MDiNZjlbsd6" Name="NTHeader" Position="452,350">
           <Canvas Id="JBIBn013QLDLJ0iGtorCGh" Name="FileHeader" Position="385,240">
             <!--
 
-    ************************ General ************************
+    ************************ Split ************************
 
 -->
-            <Node Name="General" Bounds="670,293,477,235" Id="GT4ZVjXBogmO7cq9iQVGeg">
+            <Node Name="Split" Bounds="670,293,477,235" Id="GT4ZVjXBogmO7cq9iQVGeg">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" />
               </p:NodeReference>
@@ -369,10 +392,10 @@
                   <Pin Id="BjW6FT0Wr6jPvBSZsv2nSB" Name="Machine Resolved" Kind="OutputPin" />
                 </Node>
                 <Link Id="TSyYOJAC9IZMVSwHSsQZbP" Ids="BjW6FT0Wr6jPvBSZsv2nSB,QkOwBJOzPwBPPrLgFEeUtP" />
-                <Node Bounds="682,340,64,19" Id="RUKutT0EwrkMho3J2GeTHm">
-                  <p:NodeReference LastCategoryFullName="PE.PeFile.FileHeader" LastDependency="VL.PeNet.vl">
+                <Node Bounds="682,340,64,26" Id="RUKutT0EwrkMho3J2GeTHm">
+                  <p:NodeReference LastCategoryFullName="PE.PeFile.NTHeaders" LastDependency="VL.PeNet.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="FileHeader" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="Category" Name="NTHeader" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="FileHeader" />
                   </p:NodeReference>
                   <Pin Id="TKJfVKsBLo1OrqLjERV3Mw" Name="PE File" Kind="InputPin" />
@@ -384,104 +407,14 @@
                 <Link Id="O8cKA2S4ZVnMaSa0TXuUcW" Ids="MDBOJ4JdlHgLzU4fAeSUyh,T6F4wXaw8xzM1hyJHcPqGL" />
               </Patch>
             </Node>
-            <!--
-
-    ************************ FileHeader ************************
-
--->
-            <Node Name="FileHeader" Bounds="664,62,244,176" Id="A1cRR308TkBPrf4lil1lX8">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" />
-              </p:NodeReference>
-              <Patch Id="LPofGOyQkokO8RS3x41D25">
-                <Node Bounds="762,169,75,26" Id="HiCCgVxU3fWPQekPTkMS2m">
-                  <p:NodeReference LastCategoryFullName="PeNet.Header.Pe.ImageNtHeaders" LastDependency="PeNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="FileHeader" />
-                  </p:NodeReference>
-                  <Pin Id="Gx4Bszp26inL3vXDKfDv8b" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="PCtDBp5RnEILphfA96aGpY" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="MLUDh8bYaXeLd7u8BAu1bw" Name="File Header" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="676,110,91,26" Id="UqbcrkVW4OeOrC135rGc1y">
-                  <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="ImageNtHeaders" />
-                  </p:NodeReference>
-                  <Pin Id="FmGHYTjn8BILKd1Eu6PSP7" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="NMatgGvKp2wPTds0qiStVq" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="Mw2DLFq4VrFPmKXkOlvX6a" Name="Image Nt Headers" Kind="OutputPin" />
-                </Node>
-                <Link Id="EHuYlVNxPuGMd19Uaq9djB" Ids="Mw2DLFq4VrFPmKXkOlvX6a,Gx4Bszp26inL3vXDKfDv8b" />
-                <ControlPoint Id="TWY5oAR267xM7tVn9QRuLz" Bounds="678,80" />
-                <Link Id="MzRN66XfZG9NiVUpHkbeY0" Ids="TWY5oAR267xM7tVn9QRuLz,FmGHYTjn8BILKd1Eu6PSP7" />
-                <Pin Id="GeSA8y30BTeMHvk7fuT3WD" Name="PE File" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="PeNet" LastDependency="PeNet.dll">
-                    <Choice Kind="TypeFlag" Name="PeFile" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Link Id="KZlANHHoBTaPpUg10Ikl9g" Ids="GeSA8y30BTeMHvk7fuT3WD,TWY5oAR267xM7tVn9QRuLz" IsHidden="true" />
-                <ControlPoint Id="UmLR4aLNhykP85GcMYhpw0" Bounds="834,221" />
-                <Link Id="SMqjGt6snpaO5Y2GcuqAqm" Ids="MLUDh8bYaXeLd7u8BAu1bw,UmLR4aLNhykP85GcMYhpw0" />
-                <Pin Id="Jy6LkUbfrQJP2mLa9tInRu" Name="File Header" Kind="OutputPin" />
-                <Link Id="QDB9otGRbdbQS0MVa2JHqg" Ids="UmLR4aLNhykP85GcMYhpw0,Jy6LkUbfrQJP2mLa9tInRu" IsHidden="true" />
-              </Patch>
-            </Node>
           </Canvas>
           <Canvas Id="Sw4x5yKwmlTPjj05nJyMbS" Name="OptionalHeader" Position="385,290">
             <!--
 
-    ************************ OptionalHeaderFromPeFile ************************
+    ************************ Split ************************
 
 -->
-            <Node Name="OptionalHeaderFromPeFile" Bounds="442,332,279,145" Id="JyVRIED3mydMh71hKfARyu">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" />
-              </p:NodeReference>
-              <Patch Id="Iba9gJhJY0sM3gmYPTlVp9">
-                <Node Bounds="540,410,87,26" Id="FoZhI6go8qtLMRhfOXy7Pi">
-                  <p:NodeReference LastCategoryFullName="PeNet.Header.Pe.ImageNtHeaders" LastDependency="PeNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="OptionalHeader" />
-                  </p:NodeReference>
-                  <Pin Id="RktPqlLNlU4LXEAhj4tIEX" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="NF1o3ujyvHzLJJad3psVtS" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="E8F08sDtHkxLZrURkG8Pi4" Name="Optional Header" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="454,371,91,26" Id="JOPqSFH1ad1OP4akGAQdX9">
-                  <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="ImageNtHeaders" />
-                  </p:NodeReference>
-                  <Pin Id="QiOdzKfhu4TLwdWJmboCmY" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="DI6BbBjW2cNLrVgqyYIvRT" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="FavZmx4SYdZO3ZBqNZaMM6" Name="Image Nt Headers" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="BZjfAzPTYiuN4rNnBLJCYu" Bounds="456,350" />
-                <Link Id="JqtFfBD34YAOaSjAuwWCgI" Ids="BZjfAzPTYiuN4rNnBLJCYu,QiOdzKfhu4TLwdWJmboCmY" />
-                <Pin Id="GJDdQp97Z30LmsG4ZkBTuW" Name="PE File" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="PeNet" LastDependency="PeNet.dll">
-                    <Choice Kind="TypeFlag" Name="PeFile" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Link Id="UGFZymJ4jwTOn6tGs31IFY" Ids="GJDdQp97Z30LmsG4ZkBTuW,BZjfAzPTYiuN4rNnBLJCYu" IsHidden="true" />
-                <Link Id="NUsTEf1ClHdMR3qR04LVSR" Ids="FavZmx4SYdZO3ZBqNZaMM6,RktPqlLNlU4LXEAhj4tIEX" />
-                <ControlPoint Id="UPIAZnJaXDYLm4NJdNvopA" Bounds="624,460" />
-                <Link Id="C4dNoAgAnJCONRIpezsZNv" Ids="E8F08sDtHkxLZrURkG8Pi4,UPIAZnJaXDYLm4NJdNvopA" />
-                <Pin Id="OCYk9ZyaPnqM5kaGkj8Uh3" Name="Optional Header" Kind="OutputPin">
-                  <p:TypeAnnotation LastCategoryFullName="PeNet.Header.Pe" LastDependency="PeNet.dll">
-                    <Choice Kind="TypeFlag" Name="ImageOptionalHeader" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Link Id="GdOCmei04hjORKEkXlwUqG" Ids="UPIAZnJaXDYLm4NJdNvopA,OCYk9ZyaPnqM5kaGkj8Uh3" IsHidden="true" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ General ************************
-
--->
-            <Node Name="General" Bounds="450,542,1069,285" Id="HTMHyPoufv0OKEfpbK8j5V">
+            <Node Name="Split" Bounds="450,542,1069,285" Id="HTMHyPoufv0OKEfpbK8j5V">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" />
               </p:NodeReference>
@@ -541,10 +474,10 @@
                 <Link Id="TWs4aAfZbNTQU425i6o5cy" Ids="RVOU7KsChvzMLpxR7NCmQh,OXPn5dGpEdBOCCddICzvCa" />
                 <Pin Id="IHHQkNFCjItLAo43kiQBmM" Name="Size Of Code" Kind="OutputPin" />
                 <Link Id="M4f1d62txEMOVQb5Kfty6S" Ids="OXPn5dGpEdBOCCddICzvCa,IHHQkNFCjItLAo43kiQBmM" IsHidden="true" />
-                <Node Bounds="462,580,137,19" Id="NpClaTolNMzN5HptcLzOQt">
+                <Node Bounds="462,580,87,26" Id="NpClaTolNMzN5HptcLzOQt">
                   <p:NodeReference LastCategoryFullName="PE.PeFile.OptionalHeader" LastDependency="VL.PeNet.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="OptionalHeaderFromPeFile" />
+                    <Choice Kind="OperationCallFlag" Name="OptionalHeader" />
                   </p:NodeReference>
                   <Pin Id="Q9RQ6otpTk3MDBDzY8Y5Wo" Name="PE File" Kind="InputPin" />
                   <Pin Id="Bf2nC1jegZZOvDdOCEuaZB" Name="Optional Header" Kind="OutputPin" />
@@ -704,21 +637,113 @@
               </Patch>
             </Node>
           </Canvas>
+          <!--
+
+    ************************ OptionalHeader ************************
+
+-->
+          <Node Name="OptionalHeader" Bounds="395,350,279,145" Id="L5QrHQbHXdwO01CO6Jj3qx">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="BbJuPzrihLWMW80kbGHiYG">
+              <Node Bounds="493,428,87,26" Id="A4yCs32YO7BNK91olpYbkM">
+                <p:NodeReference LastCategoryFullName="PeNet.Header.Pe.ImageNtHeaders" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="OptionalHeader" />
+                </p:NodeReference>
+                <Pin Id="PZD2M1eHAmFN4TGmofLcvq" Name="Input" Kind="StateInputPin" />
+                <Pin Id="A5gyQzhhlY2OHOr7IcHsb0" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="G1ON7cJkMDuQMM3vZTCktg" Name="Optional Header" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="407,389,91,26" Id="GpBTUOtN167Qc5AjzXCyHV">
+                <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ImageNtHeaders" />
+                </p:NodeReference>
+                <Pin Id="MYkv3JBM3KuMZzoBF8jxxw" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Ny2axpJpPwILMzmmEx06nc" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="LM9TUTaogyuNc9QbBJSLGX" Name="Image Nt Headers" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="FRRgmsSLlDzOSulH40YwpT" Bounds="409,368" />
+              <Link Id="AaZEhejSzNyPkWHMpxsQF2" Ids="FRRgmsSLlDzOSulH40YwpT,MYkv3JBM3KuMZzoBF8jxxw" />
+              <Pin Id="ICb9aHE1uoiN5tts4mum1N" Name="PE File" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="PeNet" LastDependency="PeNet.dll">
+                  <Choice Kind="TypeFlag" Name="PeFile" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Link Id="Q9Y7wRz1BJzLVIFMtcZKch" Ids="ICb9aHE1uoiN5tts4mum1N,FRRgmsSLlDzOSulH40YwpT" IsHidden="true" />
+              <Link Id="PwWQv543uRMOWlpca0PUSt" Ids="LM9TUTaogyuNc9QbBJSLGX,PZD2M1eHAmFN4TGmofLcvq" />
+              <ControlPoint Id="BtTDX7SPLjgOoz7t2ktWZ5" Bounds="577,478" />
+              <Link Id="BYc2uac99FIOYPLM39rdQt" Ids="G1ON7cJkMDuQMM3vZTCktg,BtTDX7SPLjgOoz7t2ktWZ5" />
+              <Pin Id="JkotDUq0r9cLZ6aBoN34I8" Name="Optional Header" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="PeNet.Header.Pe" LastDependency="PeNet.dll">
+                  <Choice Kind="TypeFlag" Name="ImageOptionalHeader" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Link Id="O3w6bOs3ZcWOHFa4WppQYU" Ids="BtTDX7SPLjgOoz7t2ktWZ5,JkotDUq0r9cLZ6aBoN34I8" IsHidden="true" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ FileHeader ************************
+
+-->
+          <Node Name="FileHeader" Bounds="754,350,244,176" Id="RP3Ix04j4uVPERBpjItD8s">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="ALnZgzBtX6TNdwv8o6EtF9">
+              <Node Bounds="852,457,75,26" Id="HfNalpu0yEvOAgw8MDK325">
+                <p:NodeReference LastCategoryFullName="PeNet.Header.Pe.ImageNtHeaders" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="FileHeader" />
+                </p:NodeReference>
+                <Pin Id="Ahj8wvlktVvNmFA6ksoZZh" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Ne98D4eehEXLGArq5cKLMi" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="C64Pg5NM1nsL0gRhhNtyDH" Name="File Header" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="766,398,91,26" Id="SoIgSfesLlGP8y5Rfayofs">
+                <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ImageNtHeaders" />
+                </p:NodeReference>
+                <Pin Id="JABETBkzlWQMy3A2LUos6y" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DFEg86I8gzSPWXX59S3co5" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="QIrmPrArobdL5Ik4z1402I" Name="Image Nt Headers" Kind="OutputPin" />
+              </Node>
+              <Link Id="HHzIUpes4c9LU7HNURjS47" Ids="QIrmPrArobdL5Ik4z1402I,Ahj8wvlktVvNmFA6ksoZZh" />
+              <ControlPoint Id="LcM2ylN52GPPywLbcm4lts" Bounds="768,368" />
+              <Link Id="ESPvwM9U9pxON3R2BANQi2" Ids="LcM2ylN52GPPywLbcm4lts,JABETBkzlWQMy3A2LUos6y" />
+              <Pin Id="Gm5BL7YwuTaMDngQSXDaRg" Name="PE File" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="PeNet" LastDependency="PeNet.dll">
+                  <Choice Kind="TypeFlag" Name="PeFile" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Link Id="KvqjALa5U96NAe7Qw0olE0" Ids="Gm5BL7YwuTaMDngQSXDaRg,LcM2ylN52GPPywLbcm4lts" IsHidden="true" />
+              <ControlPoint Id="TR4y32Dazt3NnAJIDbpv3I" Bounds="924,509" />
+              <Link Id="E2FcZQGOJtNOD9JGLID4CF" Ids="C64Pg5NM1nsL0gRhhNtyDH,TR4y32Dazt3NnAJIDbpv3I" />
+              <Pin Id="Rbe2npo3On0PBCNWLvXUsU" Name="File Header" Kind="OutputPin" />
+              <Link Id="NeeAUj2m50COJEv0c80C79" Ids="TR4y32Dazt3NnAJIDbpv3I,Rbe2npo3On0PBCNWLvXUsU" IsHidden="true" />
+            </Patch>
+          </Node>
         </Canvas>
-        <Canvas Id="Em882BWQZK2MDDqo3A76HZ" Name="Sections" Position="457,400">
+        <Canvas Id="Em882BWQZK2MDDqo3A76HZ" Name="SectionHeader" Position="452,400">
           <!--
 
     ************************ SectionHeaders ************************
 
 -->
-          <Node Name="SectionHeaders" Bounds="317,390,138,80" Id="AfzPlllruWfLAHqmeePCvV">
+          <Node Name="SectionHeaders" Bounds="317,382,250,105" Id="AfzPlllruWfLAHqmeePCvV">
             <p:NodeReference>
               <Choice Kind="OperationDefinition" Name="Operation" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:NodeReference>
             <p:HideCategory p:Type="Boolean">false</p:HideCategory>
             <Patch Id="T0l6JSL7UAcMUAJOCjN4ZR">
-              <Node Bounds="329,419,114,26" AutoConnect="true" Id="NoK7kt47HK0QG8NJid6Jp9">
+              <Node Bounds="329,419,114,26" Id="NoK7kt47HK0QG8NJid6Jp9">
                 <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
                   <Choice Kind="OperationNode" Name="ImageSectionHeaders" />
                   <FullNameCategoryReference ID="PeNet.PeFile" />
@@ -727,9 +752,18 @@
                 <Pin Id="BYEbYd1meLmMP1Q3d18mYD" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="BAlDNwOC4cPLNV54lSmZZE" Name="Image Section Headers" Kind="OutputPin" />
               </Node>
-              <Pin Id="CQd1ne0mDoAP5QwedCkekL" Name="Input" Kind="InputPin" />
-              <Pin Id="RJpBWWYVebzO0KF5cQpaGj" Name="Output" Kind="OutputPin" />
-              <Pin Id="AzEXCVKNjyMPXRVN2wzQ2n" Name="Image Section Headers" Kind="OutputPin" />
+              <ControlPoint Id="JYkkmFTEoPcLWqMAfGRgSO" Bounds="331,470" />
+              <Link Id="FgDgpeSS67HLSyC9mARLPf" Ids="BYEbYd1meLmMP1Q3d18mYD,JYkkmFTEoPcLWqMAfGRgSO" />
+              <Link Id="ETquDwU6zFTMbJJMAG3YqQ" Ids="JYkkmFTEoPcLWqMAfGRgSO,RJpBWWYVebzO0KF5cQpaGj" IsHidden="true" />
+              <Pin Id="RJpBWWYVebzO0KF5cQpaGj" Name="Output" Kind="OutputPin" Visibility="Optional" />
+              <ControlPoint Id="NK24JBH9woyNITciBx8KZb" Bounds="331,400" />
+              <Link Id="CmapNezNEi6LUgv1do2QsY" Ids="NK24JBH9woyNITciBx8KZb,Ms4CcklESBTNUnLyxKpd7T" />
+              <Pin Id="C19Qlf98ZzyQJ6WwpO7WRB" Name="Input" Kind="InputPin" />
+              <Link Id="OI3aVQhpN16MMwIz3XqhXm" Ids="C19Qlf98ZzyQJ6WwpO7WRB,NK24JBH9woyNITciBx8KZb" IsHidden="true" />
+              <ControlPoint Id="Fic6PlqtRsJLeishuVe4cy" Bounds="440,470" />
+              <Link Id="TmkiTeFKAuePMS00sPZFGQ" Ids="BAlDNwOC4cPLNV54lSmZZE,Fic6PlqtRsJLeishuVe4cy" />
+              <Pin Id="PYJtcNInkW7LtJGRczqi7x" Name="Image Section Headers" Kind="OutputPin" />
+              <Link Id="HnjJIptGY5VOivdHSxZC8o" Ids="Fic6PlqtRsJLeishuVe4cy,PYJtcNInkW7LtJGRczqi7x" IsHidden="true" />
             </Patch>
           </Node>
           <!--
@@ -753,6 +787,7 @@
             </Patch>
           </Node>
         </Canvas>
+        <Canvas Id="F4hrQAlPAQQM6ZxHhb5oM3" Name="Data" Position="452,450" />
       </Canvas>
     </Canvas>
     <!--
@@ -777,4 +812,7 @@
     </Node>
   </Patch>
   <NugetDependency Id="VLow1OgbuQFP1jo487Y1Rf" Location="PeNet" Version="5.1.0" />
+  <PlatformDependency Id="QVJGkOKKg2cQKnIo0WQ9r9" Location="System.Text.Json" />
+  <PlatformDependency Id="RBihNE77k8fQKqj5m9Ic8e" Location="System.Reflection" />
+  <ProjectDependency Id="M3hqMg2MvOiMVC4SUSiwCe" Location="./csharp/VL.PeNetUtils/VL.PeNetUtils.csproj" />
 </Document>
