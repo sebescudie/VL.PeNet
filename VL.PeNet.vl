@@ -787,7 +787,6 @@
             </Patch>
           </Node>
         </Canvas>
-        <Canvas Id="F4hrQAlPAQQM6ZxHhb5oM3" Name="Data" Position="452,450" />
       </Canvas>
     </Canvas>
     <!--
@@ -814,5 +813,4 @@
   <NugetDependency Id="VLow1OgbuQFP1jo487Y1Rf" Location="PeNet" Version="5.1.0" />
   <PlatformDependency Id="QVJGkOKKg2cQKnIo0WQ9r9" Location="System.Text.Json" />
   <PlatformDependency Id="RBihNE77k8fQKqj5m9Ic8e" Location="System.Reflection" />
-  <ProjectDependency Id="M3hqMg2MvOiMVC4SUSiwCe" Location="./csharp/VL.PeNetUtils/VL.PeNetUtils.csproj" />
 </Document>
