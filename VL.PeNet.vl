@@ -245,7 +245,7 @@
           <Link Id="Jg8ZB3mOFWJLUJxLMaXxpn" Ids="Q21V5txNr9HOCYUEoweHlV,DOhshXvRelQQPQsoufzzfB" />
         </Patch>
       </Node>
-      <Canvas Id="DIMdIXPl81VPc63zXNSAcN" Name="PeFile" Position="509,420">
+      <Canvas Id="DIMdIXPl81VPc63zXNSAcN" Name="PeFile" Position="508,420">
         <Canvas Id="HEjtICJgjciLJDKVQ0UJ5I" Name="ImportedFunctions" Position="452,300">
           <!--
 
@@ -326,11 +326,7 @@
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="OYQ46rdlDiyPK4d97IUAXi">
                 <ControlPoint Id="AINpx0fI7BvNufLuRWmwJ2" Bounds="684,311" />
-                <Pin Id="MZ71ffFKNHBOTeGm4fdKP1" Name="PE File" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="PeNet" LastDependency="PeNet.dll">
-                    <Choice Kind="TypeFlag" Name="PeFile" />
-                  </p:TypeAnnotation>
-                </Pin>
+                <Pin Id="MZ71ffFKNHBOTeGm4fdKP1" Name="PE File" Kind="InputPin" />
                 <Link Id="PVkVXb9qo24LM6ZoUReIdq" Ids="MZ71ffFKNHBOTeGm4fdKP1,AINpx0fI7BvNufLuRWmwJ2" IsHidden="true" />
                 <ControlPoint Id="QkOwBJOzPwBPPrLgFEeUtP" Bounds="773,511" />
                 <Pin Id="KEUCTtnA99AMJZ2mb8VPj1" Name="Machine Type" Kind="OutputPin" />
@@ -392,19 +388,9 @@
                   <Pin Id="BjW6FT0Wr6jPvBSZsv2nSB" Name="Machine Resolved" Kind="OutputPin" />
                 </Node>
                 <Link Id="TSyYOJAC9IZMVSwHSsQZbP" Ids="BjW6FT0Wr6jPvBSZsv2nSB,QkOwBJOzPwBPPrLgFEeUtP" />
-                <Node Bounds="682,340,64,26" Id="RUKutT0EwrkMho3J2GeTHm">
-                  <p:NodeReference LastCategoryFullName="PE.PeFile.NTHeaders" LastDependency="VL.PeNet.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="NTHeader" NeedsToBeDirectParent="true" />
-                    <Choice Kind="OperationCallFlag" Name="FileHeader" />
-                  </p:NodeReference>
-                  <Pin Id="TKJfVKsBLo1OrqLjERV3Mw" Name="PE File" Kind="InputPin" />
-                  <Pin Id="MDBOJ4JdlHgLzU4fAeSUyh" Name="File Header" Kind="OutputPin" />
-                </Node>
-                <Link Id="HJjb8keMXWZOuReLU3uHfU" Ids="AINpx0fI7BvNufLuRWmwJ2,TKJfVKsBLo1OrqLjERV3Mw" />
-                <Link Id="PsqVDeTw6RMLaCk8whRYeQ" Ids="MDBOJ4JdlHgLzU4fAeSUyh,Ku0MUhmRqL3PUP4fv1VRme" />
-                <Link Id="HDmG8NIsfJYQYRubkL7u1C" Ids="MDBOJ4JdlHgLzU4fAeSUyh,OSk3cvoLchZPwIZMp9PJq3" />
-                <Link Id="O8cKA2S4ZVnMaSa0TXuUcW" Ids="MDBOJ4JdlHgLzU4fAeSUyh,T6F4wXaw8xzM1hyJHcPqGL" />
+                <Link Id="PeKSUPjOb5qNH3gZ14PFoC" Ids="AINpx0fI7BvNufLuRWmwJ2,Ku0MUhmRqL3PUP4fv1VRme" />
+                <Link Id="A4gS2zy7pA0NcPEuTgxLct" Ids="AINpx0fI7BvNufLuRWmwJ2,OSk3cvoLchZPwIZMp9PJq3" />
+                <Link Id="D6Qutv6xHC6MoMsQDiA2Mn" Ids="AINpx0fI7BvNufLuRWmwJ2,T6F4wXaw8xzM1hyJHcPqGL" />
               </Patch>
             </Node>
           </Canvas>
@@ -474,18 +460,6 @@
                 <Link Id="TWs4aAfZbNTQU425i6o5cy" Ids="RVOU7KsChvzMLpxR7NCmQh,OXPn5dGpEdBOCCddICzvCa" />
                 <Pin Id="IHHQkNFCjItLAo43kiQBmM" Name="Size Of Code" Kind="OutputPin" />
                 <Link Id="M4f1d62txEMOVQb5Kfty6S" Ids="OXPn5dGpEdBOCCddICzvCa,IHHQkNFCjItLAo43kiQBmM" IsHidden="true" />
-                <Node Bounds="462,580,87,26" Id="NpClaTolNMzN5HptcLzOQt">
-                  <p:NodeReference LastCategoryFullName="PE.PeFile.OptionalHeader" LastDependency="VL.PeNet.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="OptionalHeader" />
-                  </p:NodeReference>
-                  <Pin Id="Q9RQ6otpTk3MDBDzY8Y5Wo" Name="PE File" Kind="InputPin" />
-                  <Pin Id="Bf2nC1jegZZOvDdOCEuaZB" Name="Optional Header" Kind="OutputPin" />
-                </Node>
-                <Link Id="UICSut3vgtENZbUs1Lg1M7" Ids="Bf2nC1jegZZOvDdOCEuaZB,EZapMfEjgMXMXFw47QYka5" />
-                <Link Id="PROsnv4AlWGNgDx3ozrfbm" Ids="Bf2nC1jegZZOvDdOCEuaZB,Ab02CifwTRnPLQObrIusJm" />
-                <Link Id="PrP43MgivikN5DduhiRZ57" Ids="Bf2nC1jegZZOvDdOCEuaZB,QawMk56FzhjPS5dLTCXcvt" />
-                <Link Id="EfHlSmoLgaVLCKwBWTpez9" Ids="KeLfqjPXeIKMOqG7SlXPDS,Q9RQ6otpTk3MDBDzY8Y5Wo" />
                 <Node Bounds="880,650,104,26" Id="FaZJQGCBmYIN3qlyy4dZEZ">
                   <p:NodeReference LastCategoryFullName="PeNet.Header.Pe.ImageOptionalHeader" LastDependency="PeNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -495,7 +469,6 @@
                   <Pin Id="HisdQp8vACgLEJKsLD5O2q" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="O0s0FzQ7d45OIYSWW1ATeE" Name="Major Linker Version" Kind="OutputPin" />
                 </Node>
-                <Link Id="Mi6HgnwCUacMlhPycIt2a3" Ids="Bf2nC1jegZZOvDdOCEuaZB,EJkv4pu7iu0L9oeSBr458S" />
                 <Node Bounds="999,650,105,26" Id="Na5siPpJJRYLROnUzll5Pu">
                   <p:NodeReference LastCategoryFullName="PeNet.Header.Pe.ImageOptionalHeader" LastDependency="PeNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -505,7 +478,6 @@
                   <Pin Id="EdtvghObiNzMV6xADvj3RQ" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="FQNMR1eWwDEOwsd289IJ6u" Name="Minor Linker Version" Kind="OutputPin" />
                 </Node>
-                <Link Id="RKOCpbvNaKKNzU3Qs4hcGG" Ids="Bf2nC1jegZZOvDdOCEuaZB,Ou9q7XvNcByPcWlmfpBMgP" />
                 <Node Bounds="979,691,52,19" Id="AALLMfTAVlyPyWDPMm0tNY">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -569,7 +541,6 @@
                   <Pin Id="MJaV5bdwOzBMpGu0EFMQLT" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="STilbIsqrD5OjvPr8MeKxm" Name="Major Operating System Version" Kind="OutputPin" />
                 </Node>
-                <Link Id="GIsRI8OmvUEOYCkQbXHwwN" Ids="Bf2nC1jegZZOvDdOCEuaZB,LIFKoGbZHETNJTEHyBudY9" />
                 <Node Bounds="1353,650,154,26" Id="BsbWQ3LxW0PQHP9s4jzIDo">
                   <p:NodeReference LastCategoryFullName="PeNet.Header.Pe.ImageOptionalHeader" LastDependency="PeNet.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -580,7 +551,6 @@
                   <Pin Id="ErLlfCluM6tLCUrbAhXmsf" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="TyknXwTnZ4cQQJe7Mj7JtL" Name="Minor Operating System Version" Kind="OutputPin" />
                 </Node>
-                <Link Id="RlFyMVa0NLFLs6TwsOd239" Ids="Bf2nC1jegZZOvDdOCEuaZB,VsNVSz8qe4qNtBhYu3l2tl" />
                 <Node Bounds="1323,701,52,19" Id="TWhdSgtM1AIMVxTz7WJ7aJ">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -634,6 +604,13 @@
                 <Link Id="Bzr2sjAqhF4MRlkmxwqYaG" Ids="IJHrOeFNZf6NJdLnVIchJl,JbK6Dup5LNvL6gFZZx7LeW" />
                 <Pin Id="VfBCpNQhHW6Po6bWqKCzNA" Name="OS Version" Kind="OutputPin" />
                 <Link Id="Prk1UTVRmsYLFRTA32rkfQ" Ids="JbK6Dup5LNvL6gFZZx7LeW,VfBCpNQhHW6Po6bWqKCzNA" IsHidden="true" />
+                <Link Id="CFN2Wis10dWQL0kBkrZG4s" Ids="KeLfqjPXeIKMOqG7SlXPDS,EZapMfEjgMXMXFw47QYka5" />
+                <Link Id="JK3jkg0FZBSL268xmjxR9o" Ids="KeLfqjPXeIKMOqG7SlXPDS,Ab02CifwTRnPLQObrIusJm" />
+                <Link Id="JuUL9vPLiudLn9dXymhPrz" Ids="KeLfqjPXeIKMOqG7SlXPDS,QawMk56FzhjPS5dLTCXcvt" />
+                <Link Id="Igad4rrkVugMV96IDhyPlQ" Ids="KeLfqjPXeIKMOqG7SlXPDS,EJkv4pu7iu0L9oeSBr458S" />
+                <Link Id="KpqGO31IRaANzgNaWPyu6d" Ids="KeLfqjPXeIKMOqG7SlXPDS,Ou9q7XvNcByPcWlmfpBMgP" />
+                <Link Id="BhYfEb7aRxpLE6MV47LQZW" Ids="KeLfqjPXeIKMOqG7SlXPDS,LIFKoGbZHETNJTEHyBudY9" />
+                <Link Id="GwdhRQf93joPoEveiOiSXy" Ids="KeLfqjPXeIKMOqG7SlXPDS,VsNVSz8qe4qNtBhYu3l2tl" />
               </Patch>
             </Node>
           </Canvas>
@@ -787,6 +764,882 @@
             </Patch>
           </Node>
         </Canvas>
+        <Canvas Id="DVbXQD7gmQHLNssTSYzqd7" Name="Resources" Position="452,450">
+          <!--
+
+    ************************ Resources ************************
+
+-->
+          <Node Name="Resources" Bounds="230,262,457,195" Id="NibYeVIlxJZLOkMbRDFeKp">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="RDrvx5xe2oFQF79zTGh0bw">
+              <Node Bounds="242,300,62,26" Id="NsF4cK1rog1LjCqVCQHlJs">
+                <p:NodeReference LastCategoryFullName="PeNet.PeFile" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="PeFile" />
+                  <Choice Kind="OperationCallFlag" Name="Resources" />
+                </p:NodeReference>
+                <Pin Id="Riw2lzT7k7wPiNxN22vr97" Name="Input" Kind="StateInputPin" />
+                <Pin Id="PYcevswdkzDMPRf3O1Qf32" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="HFG0sucym2vMuGfGYqAgQu" Name="Resources" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="590,380,53,26" Id="FNMLDBd01pzLLG9pD8NKSr">
+                <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.Resources" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Resources" />
+                  <Choice Kind="OperationCallFlag" Name="Icons" />
+                </p:NodeReference>
+                <Pin Id="EVfrccTCIlXO82op07mtgC" Name="Input" Kind="StateInputPin" />
+                <Pin Id="IteHFnZ0e51MdWfBEgbX0Y" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="N1lzvUmvU29P7CZGiAp6ry" Name="Icons" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="299,380,79,26" Id="N6WgzbIx851P0Itr2CqOob">
+                <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.Resources" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Resources" />
+                  <Choice Kind="OperationCallFlag" Name="VsVersionInfo" />
+                </p:NodeReference>
+                <Pin Id="ADt0QNxdEsAPmRKCBNeo2v" Name="Input" Kind="StateInputPin" />
+                <Pin Id="UOW1GIUih8SM920Gl4R7Et" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="DPaKBvJH3sOOoxEhRevRXS" Name="Vs Version Info" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="398,380,113,26" Id="MH7GegNaxc9OgZLexzWQmo">
+                <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.Resources" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Resources" />
+                  <Choice Kind="OperationCallFlag" Name="GroupIconDirectories" />
+                </p:NodeReference>
+                <Pin Id="JhJKIyp57gOM3EUYO1EoFe" Name="Input" Kind="StateInputPin" />
+                <Pin Id="TaffZcotkFvL7sjp1f4qlX" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="JSsdilueB5fPt3IgtvqKKD" Name="Group Icon Directories" Kind="OutputPin" />
+              </Node>
+              <Link Id="I5N1xSYBIJGL0pyajIO6hs" Ids="HFG0sucym2vMuGfGYqAgQu,EVfrccTCIlXO82op07mtgC" />
+              <Link Id="OAOmpZUjpzCP3oXqrPJmJO" Ids="HFG0sucym2vMuGfGYqAgQu,ADt0QNxdEsAPmRKCBNeo2v" />
+              <Link Id="MwXcUVK2LLoLRfwTioRkSq" Ids="HFG0sucym2vMuGfGYqAgQu,JhJKIyp57gOM3EUYO1EoFe" />
+              <ControlPoint Id="VApFlaBAoVENTDLIf01zuz" Bounds="244,280" />
+              <Link Id="A1clowJCO59LMCTZP3dzBi" Ids="VApFlaBAoVENTDLIf01zuz,Riw2lzT7k7wPiNxN22vr97" />
+              <Pin Id="QsiLgQMGobJLy7mIzXuJtA" Name="Input" Kind="InputPin" />
+              <Link Id="IEEFWwDPvHiPmWTjAw7bSZ" Ids="QsiLgQMGobJLy7mIzXuJtA,VApFlaBAoVENTDLIf01zuz" IsHidden="true" />
+              <ControlPoint Id="NwjNLCjteISMej9llfeYeq" Bounds="508,440" />
+              <Link Id="FF52x1JIxGiNAqsHzdha3H" Ids="JSsdilueB5fPt3IgtvqKKD,NwjNLCjteISMej9llfeYeq" />
+              <Pin Id="HV8R1uATmaAMZ0kNepscBD" Name="Version" Kind="OutputPin" />
+              <Link Id="TjI7iyJxJy9LyelXTPxMuH" Ids="OeFIKLFVZlrMHKt5VCsqPC,HV8R1uATmaAMZ0kNepscBD" IsHidden="true" />
+              <Pin Id="LcvJILCjsKIMJno3BgH5ko" Name="Group Icon Directories" Kind="OutputPin" />
+              <Link Id="F0EItwegdblNUyBIgWjOVD" Ids="NwjNLCjteISMej9llfeYeq,LcvJILCjsKIMJno3BgH5ko" IsHidden="true" />
+              <ControlPoint Id="Eb3jtq0LXzsOhtfes8x38W" Bounds="640,440" />
+              <Link Id="OWSvDRuRUOaPzsNBnGkm7R" Ids="N1lzvUmvU29P7CZGiAp6ry,Eb3jtq0LXzsOhtfes8x38W" />
+              <Pin Id="JEvlurqDzeIQXsqh9X6ZPy" Name="Icons" Kind="OutputPin" />
+              <Link Id="RjLmpFqtw0XNlCMsshN6Kz" Ids="Eb3jtq0LXzsOhtfes8x38W,JEvlurqDzeIQXsqh9X6ZPy" IsHidden="true" />
+              <ControlPoint Id="OeFIKLFVZlrMHKt5VCsqPC" Bounds="375,440" />
+              <Link Id="CthZY0cKLfoLTsgnyxaGMY" Ids="DPaKBvJH3sOOoxEhRevRXS,OeFIKLFVZlrMHKt5VCsqPC" />
+            </Patch>
+          </Node>
+          <Canvas Id="EdwNs7pXQ59MVoCeJwqplY" Name="VersionInfo" Position="231,520">
+            <Canvas Id="ViwS3GRSshaPIh7A5mnW0y" Name="FixedFileInfo" Position="400,330">
+              <!--
+
+    ************************ Split ************************
+
+-->
+              <Node Name="Split" Bounds="208,353,1787,394" Id="TtXNO6ISYA4PcSX8T9AJv5">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="ShlQ8h0uiU6M9xjINSKZbP">
+                  <Node Bounds="220,480,73,26" Id="GvhI2hiUAJ6N3AOxVMb2bi">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="DwSignature" />
+                    </p:NodeReference>
+                    <Pin Id="HfXHFQmun5mL12iHtNSb0h" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="N0JomNtxNtJL1zaapYNo6Y" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="JAovaG8gYxRMHLkV9vpqkI" Name="Dw Signature" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="QwnO6Q5Fcg3PF4iYotBWed" Bounds="222,371" />
+                  <Link Id="IFUmM2bPHLMLXCWB8ZQHJ8" Ids="QwnO6Q5Fcg3PF4iYotBWed,HfXHFQmun5mL12iHtNSb0h" />
+                  <Pin Id="RaiZ97UO1JULLz990GFzek" Name="Input" Kind="InputPin" />
+                  <Link Id="NQINgCQAnizQWx2XZ4FJlv" Ids="RaiZ97UO1JULLz990GFzek,QwnO6Q5Fcg3PF4iYotBWed" IsHidden="true" />
+                  <ControlPoint Id="UCg1bXuhDhLOt10a48mxO2" Bounds="290,721" />
+                  <Pin Id="MfciKz6te7uN6SeLZRzkEW" Name="Signature" Kind="OutputPin" Summary="Contains the value 0xFEEF04BD. This is used with the szKey member of the VS_VERSIONINFO structure when searching a file for the VS_FIXEDFILEINFO structure.">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="HhnjsBhMWLvLYuLTDMXZy4" Ids="UCg1bXuhDhLOt10a48mxO2,MfciKz6te7uN6SeLZRzkEW" IsHidden="true" />
+                  <Link Id="P2pLNxQZSuFLXxoEKCQ0hT" Ids="JAovaG8gYxRMHLkV9vpqkI,UCg1bXuhDhLOt10a48mxO2" />
+                  <Node Bounds="310,480,88,26" Id="Buv6b9ZaHeOPYoM67hcv7u">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="DwStrucVersion" />
+                    </p:NodeReference>
+                    <Pin Id="CbwmPJpWNSxMuUNEkg2S9V" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Jh66mN4njXGMwUbmrOP62X" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="MxKOQW0cSOCMOQxiZyigJv" Name="Dw Struc Version" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="EFqB2Et7RjONzATNbmbt1f" Ids="QwnO6Q5Fcg3PF4iYotBWed,CbwmPJpWNSxMuUNEkg2S9V" />
+                  <ControlPoint Id="NiVS5n8s7jjPWqlRfzrNeP" Bounds="395,721" />
+                  <Link Id="SR4JXPQPSIiPuAxAlXhQoE" Ids="MxKOQW0cSOCMOQxiZyigJv,NiVS5n8s7jjPWqlRfzrNeP" />
+                  <Pin Id="Vi8LKImaqMhNt1gAnwQckx" Name="Struct Version" Kind="OutputPin" Summary="The binary version number of this structure. The high-order word of this member contains the major version number, and the low-order word contains the minor version number.">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="MQYBPfUTN14OepxYyj1djW" Ids="NiVS5n8s7jjPWqlRfzrNeP,Vi8LKImaqMhNt1gAnwQckx" IsHidden="true" />
+                  <Node Bounds="485,621,48,19" Id="Ud4AfLP2ip2PKUJBkbkQ92">
+                    <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="Format" />
+                    </p:NodeReference>
+                    <Pin Id="MhAobyz65jIPtMeVEB4UB2" Name="Format" Kind="InputPin" DefaultValue="{0}.{1}" />
+                    <Pin Id="E8IxdNS3CfzQEAAyFi8I0m" Name="Input" Kind="InputPin" />
+                    <Pin Id="QuMBQ8AI6XPPSe8Ep3QXmp" Name="Output" Kind="OutputPin" />
+                    <Pin Id="OWK1abXyL4MNpZUfwvSjNq" Name="Input 2" Kind="InputPin" />
+                  </Node>
+                  <ControlPoint Id="MBWM2AiePWBQFvnHRYG5zU" Bounds="487,721" />
+                  <Link Id="Oy0msk5UFDON9wfp9NNwVl" Ids="QuMBQ8AI6XPPSe8Ep3QXmp,MBWM2AiePWBQFvnHRYG5zU" />
+                  <Pin Id="AGr4BLiIahkNnggnthXXxx" Name="Struct Version Resolved" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="Mh9Uup30fO8NNJJSqGLetA" Ids="MBWM2AiePWBQFvnHRYG5zU,AGr4BLiIahkNnggnthXXxx" IsHidden="true" />
+                  <Node Bounds="561,480,93,26" Id="RTyK6LAyqxuMr6fzEOJ8r7">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="DwFileVersionMS" />
+                    </p:NodeReference>
+                    <Pin Id="N5FTlRI40t2QL66wBVVdHc" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QMRRbTdhbmAP00UarQUL4C" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="NbVkrAPNg72MfpVdvvwSRh" Name="Dw File Version MS" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="HJu5xJfO2JnQQNoXfvAkXT" Ids="QwnO6Q5Fcg3PF4iYotBWed,N5FTlRI40t2QL66wBVVdHc" />
+                  <Node Bounds="802,480,90,26" Id="BSt6u7hD1WCQaXT8BnW3Sy">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="DwFileVersionLS" />
+                    </p:NodeReference>
+                    <Pin Id="TYTz2C4eou5Ni9K4tNsdiY" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="AvyDiJIfPK5PLOoQZq9UFB" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="K8AlJnHZYq2ORbe0QFbAya" Name="Dw File Version LS" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="V07lRSYu6kTLl4c0coNZW8" Ids="QwnO6Q5Fcg3PF4iYotBWed,TYTz2C4eou5Ni9K4tNsdiY" />
+                  <Node Bounds="740,610,66,19" Id="V0csPNFcDCrNCMNnPKPOSk">
+                    <p:NodeReference LastCategoryFullName="PE.Utils" LastDependency="VL.PeNet.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SplitDword" />
+                    </p:NodeReference>
+                    <Pin Id="FP37Ix2AXhnLJIh8KVdHPi" Name="Input" Kind="InputPin" />
+                    <Pin Id="KwBWGZAA1dIMni2jdgFrNL" Name="High" Kind="OutputPin" />
+                    <Pin Id="Hb4WopCTTnnNyrGOllAc0L" Name="Low" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="GJ0ff1u5w0wPP2fuDdwrbh" Ids="NbVkrAPNg72MfpVdvvwSRh,FP37Ix2AXhnLJIh8KVdHPi" />
+                  <Node Bounds="965,600,66,19" Id="IfwjW22Q4BMOYkX1i9pbS8">
+                    <p:NodeReference LastCategoryFullName="PE.Utils" LastDependency="VL.PeNet.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SplitDword" />
+                    </p:NodeReference>
+                    <Pin Id="KpxciPrUtQKN3oYqouwUl1" Name="Input" Kind="InputPin" />
+                    <Pin Id="TCDtpndNdfDOI2uNSSyKbL" Name="High" Kind="OutputPin" />
+                    <Pin Id="O1y3VKLZieUMVuyhxDldBm" Name="Low" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="J2vUuB7xWzRQKJK4uTXEXE" Ids="K8AlJnHZYq2ORbe0QFbAya,KpxciPrUtQKN3oYqouwUl1" />
+                  <Node Bounds="507,570,66,19" Id="DHxGNVfv8ZwOKDJC0zwoSF">
+                    <p:NodeReference LastCategoryFullName="PE.Utils" LastDependency="VL.PeNet.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SplitDword" />
+                    </p:NodeReference>
+                    <Pin Id="GkJKYTq050zLLgXPuPFJTO" Name="Input" Kind="InputPin" />
+                    <Pin Id="K9ZN8v1ScOTLDZV84gOZAS" Name="High" Kind="OutputPin" />
+                    <Pin Id="G9AGbosP7NpOa2yp9J5DKS" Name="Low" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="ThAgHSntRe8QdMXWozesdW" Ids="MxKOQW0cSOCMOQxiZyigJv,GkJKYTq050zLLgXPuPFJTO" />
+                  <Link Id="MsIaaTd91elOxqA2Q4hLOj" Ids="K9ZN8v1ScOTLDZV84gOZAS,E8IxdNS3CfzQEAAyFi8I0m" />
+                  <Link Id="Q3xWEHLLEDFOoJrjHQR33k" Ids="G9AGbosP7NpOa2yp9J5DKS,OWK1abXyL4MNpZUfwvSjNq" />
+                  <Node Bounds="758,650,48,19" Id="D7tLeGtTA04OXkgXdDsqL3">
+                    <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="Format" />
+                    </p:NodeReference>
+                    <Pin Id="H29GIPOdmGgLpOvBnwy4vS" Name="Format" Kind="InputPin" DefaultValue="{0}.{1}" />
+                    <Pin Id="EG9hIjsjAGSOfy3sh5GXGc" Name="Input" Kind="InputPin" />
+                    <Pin Id="OeVV0GpxvPeLfmT03A5MNL" Name="Output" Kind="OutputPin" />
+                    <Pin Id="AADDKBLlTfULHR5JR0qtxb" Name="Input 2" Kind="InputPin" />
+                  </Node>
+                  <Link Id="IetOgIEZ9LrP9rkR2aMY6Q" Ids="KwBWGZAA1dIMni2jdgFrNL,EG9hIjsjAGSOfy3sh5GXGc" />
+                  <Link Id="Qd90LPi8zWDPGGU09VmUy9" Ids="Hb4WopCTTnnNyrGOllAc0L,AADDKBLlTfULHR5JR0qtxb" />
+                  <ControlPoint Id="MTpPoOgDktvObmSKko3StR" Bounds="760,721" />
+                  <Link Id="NslvdyTQFEOQYs3wJTYsem" Ids="OeVV0GpxvPeLfmT03A5MNL,MTpPoOgDktvObmSKko3StR" />
+                  <Pin Id="SM1QZXEkfNpLxsUnsVlcol" Name="File Version MS" Kind="OutputPin" Summary="The most significant 32 bits of the file's binary version number. This member is used with dwFileVersionLS to form a 64-bit value used for numeric comparisons.">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="IMP4OPuuOpVOgSlBHNSNtx" Ids="KKD0v5z3tGKQYKdQlW8ae1,SM1QZXEkfNpLxsUnsVlcol" IsHidden="true" />
+                  <Pin Id="Uk0KnbBgi22LxRkkImH6Kf" Name="File Version MS Resolved" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="UMJ1qYnleGMPZd8xcH8nI5" Ids="MTpPoOgDktvObmSKko3StR,Uk0KnbBgi22LxRkkImH6Kf" IsHidden="true" />
+                  <ControlPoint Id="KKD0v5z3tGKQYKdQlW8ae1" Bounds="651,721" />
+                  <Link Id="KNYAYlX7S55QJKL6aiewHI" Ids="NbVkrAPNg72MfpVdvvwSRh,KKD0v5z3tGKQYKdQlW8ae1" />
+                  <ControlPoint Id="GRH3YGayTl5LjGjjPAPi9q" Bounds="889,720" />
+                  <Link Id="DxjGfpBWcDhNVZnzaP8tLY" Ids="K8AlJnHZYq2ORbe0QFbAya,GRH3YGayTl5LjGjjPAPi9q" />
+                  <Pin Id="MaWXZF1wsTRMRNHYSeN0bG" Name="File Version LS" Kind="OutputPin" Summary="The least significant 32 bits of the file's binary version number. This member is used with dwFileVersionMS to form a 64-bit value used for numeric comparisons.">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="RMLExgtH87uM9HJbHnMeLs" Ids="GRH3YGayTl5LjGjjPAPi9q,MaWXZF1wsTRMRNHYSeN0bG" IsHidden="true" />
+                  <Node Bounds="983,650,48,19" Id="CKq3xmuWGMSNj199iGkB6j">
+                    <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="Format" />
+                    </p:NodeReference>
+                    <Pin Id="VMHLF8rrW7PN4JHdWvjeVO" Name="Format" Kind="InputPin" DefaultValue="{0}.{1}" />
+                    <Pin Id="PkOUXT8HzSzNR5qKzwx5sd" Name="Input" Kind="InputPin" />
+                    <Pin Id="LX9p4Uck7kKOIH4h3M0QEl" Name="Output" Kind="OutputPin" />
+                    <Pin Id="FFkPkQoGms0MQwynAqqu9Z" Name="Input 2" Kind="InputPin" />
+                  </Node>
+                  <Link Id="BjdfjvUPkrsMC28DvhQxtg" Ids="TCDtpndNdfDOI2uNSSyKbL,PkOUXT8HzSzNR5qKzwx5sd" />
+                  <Link Id="Jjj6Fz0hX5ALsddOvgoHS3" Ids="O1y3VKLZieUMVuyhxDldBm,FFkPkQoGms0MQwynAqqu9Z" />
+                  <ControlPoint Id="VNagRwsDJh5P3Q3Kon09jl" Bounds="985,720" />
+                  <Link Id="LgqQ63liaxdQdEkLsKDnmM" Ids="LX9p4Uck7kKOIH4h3M0QEl,VNagRwsDJh5P3Q3Kon09jl" />
+                  <Pin Id="Efcrr7ojAg5Mu1Pgn7GkGB" Name="File Version LS Resolved" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="Tpa95tVcOnJLKvEVmn2WG8" Ids="VNagRwsDJh5P3Q3Kon09jl,Efcrr7ojAg5Mu1Pgn7GkGB" IsHidden="true" />
+                  <Node Bounds="1331,480,109,26" Id="BKGpTsa98kqM9B3TWPo2me">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="DwProductVersionLS" />
+                    </p:NodeReference>
+                    <Pin Id="CZLXEZ02DeFQUcQkhIRAx0" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="IUT9SrcE6dUONJrKfYP1uL" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="DyaFYr8e5ONLVz8SvQFZa7" Name="Dw Product Version LS" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="GaXOOXYmzjXOi1QlqkrvVA" Ids="QwnO6Q5Fcg3PF4iYotBWed,CZLXEZ02DeFQUcQkhIRAx0" />
+                  <Node Bounds="1038,480,112,26" Id="LXjpTMo7keQMZqP0DKH7jq">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="DwProductVersionMS" />
+                    </p:NodeReference>
+                    <Pin Id="OarldcO9PHmLSKAOd7NuV5" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="AyYteDVVPgFLJj5DtQDEM6" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="SSPqqmiTKYHOwgGbPYLzns" Name="Dw Product Version MS" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="LOJ8fYbyCN5PMCqXOvqzX6" Ids="QwnO6Q5Fcg3PF4iYotBWed,OarldcO9PHmLSKAOd7NuV5" />
+                  <ControlPoint Id="Qk23mfDpE2hNCckEyqSpe2" Bounds="1147,721" />
+                  <Pin Id="RURNFpWaTPpP4urD9oIiJg" Name="Product Version MS" Kind="OutputPin" Summary="The most significant 32 bits of the binary version number of the product with which this file was distributed. This member is used with dwProductVersionLS to form a 64-bit value used for numeric comparisons.">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="DRig8PGPdcCM6oELCi2KVw" Ids="Qk23mfDpE2hNCckEyqSpe2,RURNFpWaTPpP4urD9oIiJg" IsHidden="true" />
+                  <Node Bounds="1248,590,66,19" Id="AXSJzwA23s4PuUGNR0pSSA">
+                    <p:NodeReference LastCategoryFullName="PE.Utils" LastDependency="VL.PeNet.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SplitDword" />
+                    </p:NodeReference>
+                    <Pin Id="SFqt4Eyi3BiQBaXyr1veTi" Name="Input" Kind="InputPin" />
+                    <Pin Id="ILHFb3DoAxaMqgFh4h9ktq" Name="High" Kind="OutputPin" />
+                    <Pin Id="AGeRLhd5CyCLMAvnp6XT7n" Name="Low" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1266,640,48,19" Id="VhUZGJENQmhQazod6zxAX5">
+                    <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="Format" />
+                    </p:NodeReference>
+                    <Pin Id="VrV4sLhaHeDLdoly8hpWUk" Name="Format" Kind="InputPin" DefaultValue="{0}.{1}" />
+                    <Pin Id="EvtNc38sosAOJbN1b8s8HK" Name="Input" Kind="InputPin" />
+                    <Pin Id="RXwsC3wJAH6QVNTE7GUFbk" Name="Output" Kind="OutputPin" />
+                    <Pin Id="QyvghZeSGPfNXs93jDkQ9X" Name="Input 2" Kind="InputPin" />
+                  </Node>
+                  <Link Id="CVfZ6Q0f8Q0OypbnwLoLyS" Ids="ILHFb3DoAxaMqgFh4h9ktq,EvtNc38sosAOJbN1b8s8HK" />
+                  <Link Id="Kzk0MOce7iRPEsjL0pSc5w" Ids="AGeRLhd5CyCLMAvnp6XT7n,QyvghZeSGPfNXs93jDkQ9X" />
+                  <ControlPoint Id="Mwxh38gC6C0PmNvFilTNhj" Bounds="1268,720" />
+                  <Link Id="HVOxuYRDOMoNgXtZnV9QPV" Ids="RXwsC3wJAH6QVNTE7GUFbk,Mwxh38gC6C0PmNvFilTNhj" />
+                  <Pin Id="NxqmADBaZpaOIjPRRRY1ZM" Name="Product Version MS Resolved" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="HmBswzlaV9ON1bX6tXGTlr" Ids="Mwxh38gC6C0PmNvFilTNhj,NxqmADBaZpaOIjPRRRY1ZM" IsHidden="true" />
+                  <Link Id="TRYQGIMdDMDLVAZzvtyRIP" Ids="SSPqqmiTKYHOwgGbPYLzns,SFqt4Eyi3BiQBaXyr1veTi" />
+                  <Link Id="Kccd2qTpX2uLrbEHttTvvg" Ids="SSPqqmiTKYHOwgGbPYLzns,Qk23mfDpE2hNCckEyqSpe2" />
+                  <ControlPoint Id="JxO3aQu0Io2QF5sUoSAgVA" Bounds="1437,720" />
+                  <Link Id="DmyqdVcmZHFP055PHCZ4df" Ids="DyaFYr8e5ONLVz8SvQFZa7,JxO3aQu0Io2QF5sUoSAgVA" />
+                  <Pin Id="JpOe6CCLlCuPC7LH9dvjFC" Name="Product Version LS" Kind="OutputPin" Summary="The least significant 32 bits of the binary version number of the product with which this file was distributed. This member is used with dwProductVersionMS to form a 64-bit value used for numeric comparisons.">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="LuEbVgTrCfsQBtLwZ8o3Sz" Ids="JxO3aQu0Io2QF5sUoSAgVA,JpOe6CCLlCuPC7LH9dvjFC" IsHidden="true" />
+                  <Node Bounds="1545,590,66,19" Id="T5mFqd0Mz6uNqnwXPDd4Js">
+                    <p:NodeReference LastCategoryFullName="PE.Utils" LastDependency="VL.PeNet.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="SplitDword" />
+                    </p:NodeReference>
+                    <Pin Id="BctHsNdSJABOa6Kd7TF3RX" Name="Input" Kind="InputPin" />
+                    <Pin Id="AhH2KZeDWXwMrzuXejf3yA" Name="High" Kind="OutputPin" />
+                    <Pin Id="QyDWvKsffa8Ldj4wl2125n" Name="Low" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1563,640,48,19" Id="VumZuwoELwaOzK2y2wHANt">
+                    <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="Format" />
+                    </p:NodeReference>
+                    <Pin Id="GVupYdHUscnQVYI6n2QjTZ" Name="Format" Kind="InputPin" DefaultValue="{0}.{1}" />
+                    <Pin Id="QUUbEIt99UMM8dm8VkSBwN" Name="Input" Kind="InputPin" />
+                    <Pin Id="K7LNMRLOnY9LEuzYwUnOwu" Name="Output" Kind="OutputPin" />
+                    <Pin Id="RWH5UPv097UNZagcN2G8Qk" Name="Input 2" Kind="InputPin" />
+                  </Node>
+                  <ControlPoint Id="G60hLmudD86PZ9JvUNzgU4" Bounds="1565,720" />
+                  <Link Id="Qtw7xfXstfiO6gmYBtmT6x" Ids="AhH2KZeDWXwMrzuXejf3yA,QUUbEIt99UMM8dm8VkSBwN" />
+                  <Link Id="RItcRf80Z7YNLGXCC8zeW3" Ids="QyDWvKsffa8Ldj4wl2125n,RWH5UPv097UNZagcN2G8Qk" />
+                  <Link Id="Vjva2uafDLxQYmLCJtwPvN" Ids="K7LNMRLOnY9LEuzYwUnOwu,G60hLmudD86PZ9JvUNzgU4" />
+                  <Pin Id="TNBorgOz0eyL26blwrEbxZ" Name="Product Version LS Resolved" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="IccGTvE2udgMS9fsP9Uq0a" Ids="G60hLmudD86PZ9JvUNzgU4,TNBorgOz0eyL26blwrEbxZ" IsHidden="true" />
+                  <Link Id="VXqTnDArfFVNd0eXDGe5Ne" Ids="DyaFYr8e5ONLVz8SvQFZa7,BctHsNdSJABOa6Kd7TF3RX" />
+                  <Node Bounds="1691,480,93,26" Id="SRQz2LaAraPNE2rL5Cdqwc">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="DwFileFlagsMask" />
+                    </p:NodeReference>
+                    <Pin Id="LYY28louDskNIhx23DjMW3" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="F3nShAZAFisQNMbCj2Rvv0" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="PL4WqXJcVGoL7T82T5xt1L" Name="Dw File Flags Mask" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="CpNq1ubJyCbOYyDDIHfCdu" Ids="QwnO6Q5Fcg3PF4iYotBWed,LYY28louDskNIhx23DjMW3" />
+                  <ControlPoint Id="HuxxsSUBwAIM394dcDswWJ" Bounds="1781,730" />
+                  <Link Id="N9s9s2kB1vUMjUB0sNfy7n" Ids="PL4WqXJcVGoL7T82T5xt1L,HuxxsSUBwAIM394dcDswWJ" />
+                  <Pin Id="QpaEpkpnlCcPVODD2bhrD0" Name="File Flags Mask" Kind="OutputPin" Summary="Contains a bitmask that specifies the valid bits in dwFileFlags. A bit is valid only if it was defined when the file was created." />
+                  <Link Id="Jl96VUgxdjiOvhcv5ppvtO" Ids="HuxxsSUBwAIM394dcDswWJ,QpaEpkpnlCcPVODD2bhrD0" IsHidden="true" />
+                  <Link Id="TlslILNTYfHLa6yZdbmyAs" Ids="QwnO6Q5Fcg3PF4iYotBWed,QMODJCb3o6qPKIDWEh3j1e" />
+                  <Node Bounds="1863,480,70,26" Id="HnMtrOyMUXgL7GQ3k8wlzu">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsFixedFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <FullNameCategoryReference ID="PeNet.Header.Resource.VsFixedFileInfo" />
+                      <Choice Kind="OperationCallFlag" Name="DwFileFlags" />
+                    </p:NodeReference>
+                    <Pin Id="QMODJCb3o6qPKIDWEh3j1e" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="VQBniOEJDMgMWOQjfvPrtW" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="EoKVEBiV6SlOOQAeD6oROP" Name="Dw File Flags" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="ST9B1qvHgreMsShsbdV6SZ" Bounds="1930,730" />
+                  <Link Id="OhmpqU4i2nVP37IC9NKbAu" Ids="EoKVEBiV6SlOOQAeD6oROP,ST9B1qvHgreMsShsbdV6SZ" />
+                  <Pin Id="JCjAv1o2PMtNxkcL8ZQ6Rl" Name="File Flags" Kind="OutputPin" Summary="Contains a bitmask that specifies the Boolean attributes of the file." />
+                  <Link Id="G8WoNLKSgokNTqLHwYdzj7" Ids="ST9B1qvHgreMsShsbdV6SZ,JCjAv1o2PMtNxkcL8ZQ6Rl" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <Canvas Id="FZHgoNXC4CzOf19MqVsRt3" Name="StringFileInfo" Position="400,580">
+              <Canvas Id="JFUnh9FLbTqOSsJugBphHb" Name="StringTable" Position="304,270">
+                <!--
+
+    ************************ Split ************************
+
+-->
+                <Node Name="Split" Bounds="159,153,1041,162" Id="G4atYrKDYd3PXmxUvWnERQ" Summary="Represents the organization of data in a file-version resource. It contains language and code page formatting information for the strings specified by the Children member. A code page is an ordered character set." Remarks="This structure is not a true C-language structure because it contains variable-length members. This structure was created solely to depict the organization of data in a version resource and does not appear in any of the header files shipped with the Windows Software Development Kit (SDK).&#xD;&#xA;&#xD;&#xA;The Children member of the StringFileInfo structure contains at least one StringTable structure.&#xD;&#xA;&#xD;&#xA;Set the code page portion of the szKey member to the hexadecimal value 0x04b0 to indicate the Unicode code page, or to the hexadecimal value of the code page that is appropriate for the language component. After you choose the value for the code page you should continue to use the same value in later revisions to the file.&#xD;&#xA;&#xD;&#xA;An executable file or DLL that supports multiple languages should have a version resource for each language, rather than a single version resource that contains strings in several languages. However, if you use the Var structure to list the languages that your application supports, the number of StringTable structures in the version resource is directly related to the number of language/code page identifier pairs in the Value member of the Var structure.">
+                  <p:NodeReference>
+                    <Choice Kind="OperationDefinition" />
+                  </p:NodeReference>
+                  <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                  <Patch Id="IvAV1VCWZFcO2zGheq8ace">
+                    <ControlPoint Id="ILq11FHcQJjMK02exiW1lM" Bounds="173,171" />
+                    <Pin Id="Rh9Rsns8Zu5LmprdoWqdXd" Name="Input" Kind="InputPin" />
+                    <Link Id="TMwOIKJ0pxSM0eT3qPumdU" Ids="Rh9Rsns8Zu5LmprdoWqdXd,ILq11FHcQJjMK02exiW1lM" IsHidden="true" />
+                    <Pin Id="VYuiOJyUpgBQd3EWf0hlCn" Name="Company Name" Kind="OutputPin" />
+                    <Link Id="KGW4J5kJULzPxYM2wZxx2a" Ids="TnPDYh0UIhiQDT2br73fNN,VYuiOJyUpgBQd3EWf0hlCn" IsHidden="true" />
+                    <ControlPoint Id="TnPDYh0UIhiQDT2br73fNN" Bounds="252,288" />
+                    <ControlPoint Id="FZozRaAY3fiOZSi4ct9XMA" Bounds="371,288" />
+                    <Pin Id="UWAPXjunJr4PKwv1xocNOr" Name="File Description" Kind="OutputPin" />
+                    <Link Id="BdRyttXs4HAQcwxxFwXL4p" Ids="FZozRaAY3fiOZSi4ct9XMA,UWAPXjunJr4PKwv1xocNOr" IsHidden="true" />
+                    <ControlPoint Id="VZV3f2c97c4NJ0P4K7w2Di" Bounds="473,288" />
+                    <Pin Id="BxAlUvMDbCWLfWogXicOEw" Name="File Version" Kind="OutputPin" />
+                    <Link Id="LwGT3cZip3YP5x3BOxKRiL" Ids="VZV3f2c97c4NJ0P4K7w2Di,BxAlUvMDbCWLfWogXicOEw" IsHidden="true" />
+                    <ControlPoint Id="KGcZcPxk01UNvOdKydFXGB" Bounds="585,288" />
+                    <Pin Id="LFL8supciHcOmkk5x4PamH" Name="Internal Name" Kind="OutputPin" />
+                    <Link Id="LNGWbyMelq0LjTczLaTh28" Ids="KGcZcPxk01UNvOdKydFXGB,LFL8supciHcOmkk5x4PamH" IsHidden="true" />
+                    <ControlPoint Id="A9VGxvJ2X8lLChm6dStw6K" Bounds="703,288" />
+                    <Pin Id="Ie6Yrt8LcR0L9YCd7qMRf8" Name="Legal Copyright" Kind="OutputPin" />
+                    <Link Id="TjlfvIDgJbrOUbNaFXfTb3" Ids="A9VGxvJ2X8lLChm6dStw6K,Ie6Yrt8LcR0L9YCd7qMRf8" IsHidden="true" />
+                    <ControlPoint Id="QleNly4XbS3OEhwpGZhydw" Bounds="836,288" />
+                    <Pin Id="MrmFfyfE74DOROpbdIXG5I" Name="Original Filename" Kind="OutputPin" />
+                    <Link Id="CK1sZpojGTULXudnOEzfvN" Ids="QleNly4XbS3OEhwpGZhydw,MrmFfyfE74DOROpbdIXG5I" IsHidden="true" />
+                    <ControlPoint Id="CuhSCfrNRx6NsLNqZNx2S0" Bounds="972,298" />
+                    <Pin Id="HyEUdR6dkxDOwv2YdnEGdB" Name="Product Name" Kind="OutputPin" />
+                    <Link Id="F2GWSqvCTDoOWytpkReehJ" Ids="CuhSCfrNRx6NsLNqZNx2S0,HyEUdR6dkxDOwv2YdnEGdB" IsHidden="true" />
+                    <ControlPoint Id="UW9YGjoizgqLWBXdfQGuDL" Bounds="1105,298" />
+                    <Pin Id="FrlmFIXQRcGLGXzXFQYfCW" Name="Product Version" Kind="OutputPin" />
+                    <Link Id="RaQU77YIrYrQLBl749wLll" Ids="UW9YGjoizgqLWBXdfQGuDL,FrlmFIXQRcGLGXzXFQYfCW" IsHidden="true" />
+                    <Node Bounds="171,220,85,26" Id="TaZ6HSVEFOmL8LlhM49UFm">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="StringTable" />
+                        <Choice Kind="OperationCallFlag" Name="CompanyName" />
+                      </p:NodeReference>
+                      <Pin Id="N4Gap7nK03sLQeQ6PgSmK0" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="CQG3qhYmXsTPjhAOrukZKI" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="AngJSfFZKvYLu2Xrwv3Dxy" Name="Company Name" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="291,220,84,26" Id="Gpjr2BFbgGCLvc5zRVIin7">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="FileDescription" />
+                      </p:NodeReference>
+                      <Pin Id="BeKiF6EWXmpPBXRLkcl43K" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="VfOcRDMc6nsNWPLMfqAU1k" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="HcxxdurtqWKPuOqHZrbab6" Name="File Description" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="411,220,66,26" Id="Jb4LEA2o98mONS2vOQ33M1">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="FileVersion" />
+                      </p:NodeReference>
+                      <Pin Id="B9OcggtshJmQSNdaZ2SJuP" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="J0WabDsREnpP0FEF8CFEg6" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="G2NcftQ4pVsLUw00CdRUun" Name="File Version" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="512,220,77,26" Id="KgQ0ucc7rn6PnP6GGcUVwx">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="InternalName" />
+                      </p:NodeReference>
+                      <Pin Id="SxRMcrVGzHOPftAsKCHy0Q" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="J1FD20gTac0MPbCfZbEiNG" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="R5uPTv6MR3QQCQa24gqBBL" Name="Internal Name" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="622,220,85,26" Id="N05ZIaTXqkxOXfkaw53zgN">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="LegalCopyright" />
+                      </p:NodeReference>
+                      <Pin Id="PXO9WetGnHYPAEd2DvnAn2" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="QDTaeuJL3ixPRjLvjKZ2t9" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="OnRtXXJNJfeLLHyQ2Ng5gV" Name="Legal Copyright" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="747,220,93,26" Id="Tt4OoIfRi3HMTbAg43s1Lc">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="OriginalFilename" />
+                      </p:NodeReference>
+                      <Pin Id="VA6qLe07DkbMLdn5SMr3TQ" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="LtgWN3fKgcENYEMGelENFW" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="ElHMxuzGRKQNhx11a9WPSu" Name="Original Filename" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="899,220,77,26" Id="J94QdB77Fd5MpoSZI7ed3v">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="ProductName" />
+                      </p:NodeReference>
+                      <Pin Id="CXEdkqfHq0VMAzA87idjMp" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="BkkYbVAW2EPMIMs5aOejpZ" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Ct4NkrYOMclOavo6L3L8MJ" Name="Product Name" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1024,220,85,26" Id="OxKqbHzlEBWMRfEhlgrPbT">
+                      <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringTable" LastDependency="PeNet.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="ProductVersion" />
+                      </p:NodeReference>
+                      <Pin Id="GTvWDT0ufr0PWelFFw0ArW" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Oi0mdFdOCRpQCB5zRBuDRC" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="BxUa2EmbK4LL56oJcPb2Ja" Name="Product Version" Kind="OutputPin" />
+                    </Node>
+                    <Link Id="GK01RWLO2h3LTWieh6p9zR" Ids="AngJSfFZKvYLu2Xrwv3Dxy,TnPDYh0UIhiQDT2br73fNN" />
+                    <Link Id="GuVGbDP8vImL7WTfFpmtCx" Ids="HcxxdurtqWKPuOqHZrbab6,FZozRaAY3fiOZSi4ct9XMA" />
+                    <Link Id="SIexkJPcRriORthPkObNao" Ids="G2NcftQ4pVsLUw00CdRUun,VZV3f2c97c4NJ0P4K7w2Di" />
+                    <Link Id="AdGt5QLkenHOsoKYv5KH92" Ids="R5uPTv6MR3QQCQa24gqBBL,KGcZcPxk01UNvOdKydFXGB" />
+                    <Link Id="DqmrFih2YEQP4kC8NddpdX" Ids="OnRtXXJNJfeLLHyQ2Ng5gV,A9VGxvJ2X8lLChm6dStw6K" />
+                    <Link Id="Bn2EjiG9vXCQXzqwnYcbTH" Ids="ElHMxuzGRKQNhx11a9WPSu,QleNly4XbS3OEhwpGZhydw" />
+                    <Link Id="A07Rp5AaeYzOLs6PclulEQ" Ids="Ct4NkrYOMclOavo6L3L8MJ,CuhSCfrNRx6NsLNqZNx2S0" />
+                    <Link Id="L9AMJTd4ZD5LaqydUZpi1i" Ids="BxUa2EmbK4LL56oJcPb2Ja,UW9YGjoizgqLWBXdfQGuDL" />
+                    <Link Id="C0b7NGVsiP0MqXmbANwbzx" Ids="ILq11FHcQJjMK02exiW1lM,N4Gap7nK03sLQeQ6PgSmK0" />
+                    <Link Id="PEN4QQKfPJ5Ntch3baq1sR" Ids="ILq11FHcQJjMK02exiW1lM,BeKiF6EWXmpPBXRLkcl43K" />
+                    <Link Id="FJ9rWNG51B5NBbmDNPy3TD" Ids="ILq11FHcQJjMK02exiW1lM,B9OcggtshJmQSNdaZ2SJuP" />
+                    <Link Id="KJIpQXwCAHKMT4vAp4kUkV" Ids="ILq11FHcQJjMK02exiW1lM,SxRMcrVGzHOPftAsKCHy0Q" />
+                    <Link Id="OreoitfgWEsPR4XBOXbLow" Ids="ILq11FHcQJjMK02exiW1lM,PXO9WetGnHYPAEd2DvnAn2" />
+                    <Link Id="HtKk8VUNKMFPVJ60b47eoh" Ids="ILq11FHcQJjMK02exiW1lM,VA6qLe07DkbMLdn5SMr3TQ" />
+                    <Link Id="NpB61bYemycMv2XzSlrKnR" Ids="ILq11FHcQJjMK02exiW1lM,CXEdkqfHq0VMAzA87idjMp" />
+                    <Link Id="IrQN3wrnDGVNa8uQk67lWA" Ids="ILq11FHcQJjMK02exiW1lM,GTvWDT0ufr0PWelFFw0ArW" />
+                  </Patch>
+                </Node>
+              </Canvas>
+              <!--
+
+    ************************ Split ************************
+
+-->
+              <Node Name="Split" Bounds="308,62,564,145" Id="Ej7fruOeWKXPn6dwmqbcxT" Summary="Represents the organization of data in a file-version resource. It contains version information that can be displayed for a particular language and code page.">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="LqCkcQHRV6EMEY30PhYrln">
+                  <Node Bounds="745,127,68,26" Id="AZ0vtiJCd5CNJztsCFul7t">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="StringFileInfo" />
+                      <Choice Kind="OperationCallFlag" Name="StringTable" />
+                    </p:NodeReference>
+                    <Pin Id="RDhKe0oS7KHO4JRYsPDbYw" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="AHN41FRWGNJK9n4xSK4tey" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="DWNQeQSTOlLMzP7QYvTmrQ" Name="String Table" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="BmvSEhibZTfNWCTFySwFw1" Bounds="322,80" />
+                  <Pin Id="AgyjbLxdY5VO8QmvGS0reh" Name="Input" Kind="InputPin" />
+                  <Link Id="A8E35Unk69FMGa7I3eVdbg" Ids="BmvSEhibZTfNWCTFySwFw1,RDhKe0oS7KHO4JRYsPDbYw" />
+                  <Link Id="Fh7JcJ0vzqsQHFKJ50pLS2" Ids="AgyjbLxdY5VO8QmvGS0reh,BmvSEhibZTfNWCTFySwFw1" IsHidden="true" />
+                  <ControlPoint Id="VIxd1MDEKwxOqFyfU3nTOk" Bounds="810,190" />
+                  <Link Id="TbyoUAIQ0OPNT9K12rINAe" Ids="DWNQeQSTOlLMzP7QYvTmrQ,VIxd1MDEKwxOqFyfU3nTOk" />
+                  <Pin Id="PvApUmgGCbrMBI4oK4JedG" Name="Length" Kind="OutputPin" Summary="The length, in bytes, of the entire StringFileInfo block, including all structures indicated by the Children member." />
+                  <Link Id="RYDqaYhCwc7O3e5DckorsA" Ids="JnRwV9HLH7qPHM03YJVKPe,PvApUmgGCbrMBI4oK4JedG" IsHidden="true" />
+                  <Pin Id="EZKgXb5DnYJLeZZxZ6mt3W" Name="Value Length" Kind="OutputPin" Summary="This member is always equal to zero." />
+                  <Link Id="E0liOqOXaarPkRsOkU0HP2" Ids="U2QvXFdFOgALOmU2bmDt5d,EZKgXb5DnYJLeZZxZ6mt3W" IsHidden="true" />
+                  <Pin Id="KTdn96TezXsLIDlXniO9S6" Name="Type" Kind="OutputPin" Summary="The type of data in the version resource. This member is 1 if the version resource contains text data and 0 if the version resource contains binary data." />
+                  <Link Id="A6u9sLADfX1QBsHCzSXtUA" Ids="HQRqum4bpBAP11FM8whHxH,KTdn96TezXsLIDlXniO9S6" IsHidden="true" />
+                  <Pin Id="Jc3ZlZ61mIpO85cO40UyWu" Name="Key" Kind="OutputPin" Summary="The Unicode string L&quot;StringFileInfo&quot;." />
+                  <Link Id="E0rQQ7P40G5P2U1aA8x58E" Ids="V1VV0mwUX9JNKcgeariEVH,Jc3ZlZ61mIpO85cO40UyWu" IsHidden="true" />
+                  <Pin Id="KFr2JVNuVMNPJa3hq4GKDf" Name="Children" Kind="OutputPin" Summary="An array of one or more StringTable structures. Each StringTable structure's szKey member indicates the appropriate language and code page for displaying the text in that StringTable structure." />
+                  <Link Id="TRKqVpx9Z4KPeBQTYM8PVB" Ids="VIxd1MDEKwxOqFyfU3nTOk,KFr2JVNuVMNPJa3hq4GKDf" IsHidden="true" />
+                  <Node Bounds="320,127,64,26" Id="HUvXT3fO0fRLPAN5FQ18Y5">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="StringFileInfo" />
+                      <Choice Kind="OperationCallFlag" Name="WLength" />
+                    </p:NodeReference>
+                    <Pin Id="AKNHHvo2Kk4NRovc2rAbeT" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="TBsX4acSOO8N6YIIq7p5Ns" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="RhYRpZGtbqcNtxzCBCWELz" Name="WLength" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="TGt9nQnviW4NqeMdsY3iC2" Ids="BmvSEhibZTfNWCTFySwFw1,AKNHHvo2Kk4NRovc2rAbeT" />
+                  <ControlPoint Id="JnRwV9HLH7qPHM03YJVKPe" Bounds="381,190" />
+                  <Link Id="MfLwJS99qPSPZCjjYtmt2T" Ids="RhYRpZGtbqcNtxzCBCWELz,JnRwV9HLH7qPHM03YJVKPe" />
+                  <Node Bounds="422,127,81,26" Id="CrgBus5HswYP8WhwjbaFDN">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="StringFileInfo" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="WValueLength" />
+                    </p:NodeReference>
+                    <Pin Id="JFBncHWyObQOV5xvsFY4Mk" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Hso5ZZ52BPdPXqa98ivaIP" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="EoWqC9YDjSVN1ee9jwQaJK" Name="WValue Length" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="JtOwii6XBAZNU01M2rT8Cv" Ids="BmvSEhibZTfNWCTFySwFw1,JFBncHWyObQOV5xvsFY4Mk" />
+                  <ControlPoint Id="U2QvXFdFOgALOmU2bmDt5d" Bounds="500,190" />
+                  <Link Id="SpktvAm0NhRMJOUE3mYS9d" Ids="EoWqC9YDjSVN1ee9jwQaJK,U2QvXFdFOgALOmU2bmDt5d" />
+                  <Node Bounds="541,127,64,26" Id="IjpEUVWgZ6QMtCwe6TthpT">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="StringFileInfo" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="WType" />
+                    </p:NodeReference>
+                    <Pin Id="IvcJ9EfR5LSMJtiLyBJTxy" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="RDojlGWHJ5qQKVBvZhnAZX" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="NcRsPAtiZzQMEX83F05z5P" Name="WType" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="Npewm6BhUfzNk7C36lJNss" Ids="BmvSEhibZTfNWCTFySwFw1,IvcJ9EfR5LSMJtiLyBJTxy" />
+                  <ControlPoint Id="HQRqum4bpBAP11FM8whHxH" Bounds="602,190" />
+                  <Link Id="D96ECkTZjqoQBpW8kmb5i0" Ids="NcRsPAtiZzQMEX83F05z5P,HQRqum4bpBAP11FM8whHxH" />
+                  <Node Bounds="643,127,64,26" Id="I0L5UyPhs7iPjh6Mwd5oUb">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.StringFileInfo" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="StringFileInfo" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="SzKey" />
+                    </p:NodeReference>
+                    <Pin Id="CmQU5gsErj6QSlNUhibMHy" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="PSzCxSp8jxrLOmREevvmNt" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="CVEVThtOytaPFgbGsSCv9R" Name="Sz Key" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="Ff4XW4Y1FqzPWBPAzBDNen" Ids="BmvSEhibZTfNWCTFySwFw1,CmQU5gsErj6QSlNUhibMHy" />
+                  <ControlPoint Id="V1VV0mwUX9JNKcgeariEVH" Bounds="704,190" />
+                  <Link Id="OgrsgYcHJTFPGeRL0hktoR" Ids="CVEVThtOytaPFgbGsSCv9R,V1VV0mwUX9JNKcgeariEVH" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <Canvas Id="LESbFs0T8WdNGSrUldF29c" Name="VarFileInfo" Position="398,730">
+              <Node Bounds="152,130,66,26" Id="S2e0DnpwTQxLebPyz98vMh">
+                <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsVersionInfo" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="VsVersionInfo" />
+                  <Choice Kind="OperationCallFlag" Name="VarFileInfo" />
+                </p:NodeReference>
+                <Pin Id="UiWO47PZC3qOX3uDFx16iG" Name="Input" Kind="StateInputPin" />
+                <Pin Id="I2l54N3JHhoNDvP0hUriHi" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="DDiT7BbhukTPzQs5QKgzuW" Name="Var File Info" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="213,181,55,26" Id="VR6VWOytLuCNH1MTeTJJlT">
+                <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VarFileInfo" LastDependency="PeNet.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="VarFileInfo" />
+                  <Choice Kind="OperationCallFlag" Name="Children" />
+                </p:NodeReference>
+                <Pin Id="VtLp3rJK4yqPUrwsx29OHh" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Eal1aKZlmKWQRGoA92tHXV" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="NbRbujHvmpkMcqVzIz7Oje" Name="Children" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="251,234,124,162" Id="OXEqBH5w2cyMdox8Rv7wpB">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="FKK8pHCrgKtL24gr4pFvok" Name="Break" Kind="OutputPin" />
+                <Patch Id="BiqxMcByKKzLbA1BCLKUVx" ManuallySortedPins="true">
+                  <Patch Id="FsppcVrVYpQOnKWPrDacde" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="KxCmpIiur0YQCiFW6jPpyL" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="F3745ZB4294PSZbAMLZGFq" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="263,260,100,26" Id="QlLAAUAzDiZQQNE3NKR5d2">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.Var" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Var" />
+                      <Choice Kind="OperationCallFlag" Name="Value" />
+                    </p:NodeReference>
+                    <Pin Id="AambAoMCYPaPyp9Jw5vMvg" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="NSkiYHH1m5BLabXnY1ZJRd" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="PoxIhehKZTOMfM3S50fH3j" Name="Value" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="263,300,43,26" Id="QW1tnWjaSt8NKps3ZBa15g">
+                    <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.Var" LastDependency="PeNet.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Var" />
+                      <Choice Kind="OperationCallFlag" Name="SzKey" />
+                    </p:NodeReference>
+                    <Pin Id="OmEpLyf5RcUNRxCbXTHgaW" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="O9jvgDsK21FLMFOU5zMtfQ" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="GTwVvE3LBSLOUhODeCxipM" Name="Sz Key" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="301,340,62,26" Id="TsNOS5wZhVXPSjiMgv1IZG">
+                    <p:NodeReference LastCategoryFullName="Collections.Common.KeyValuePair" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="RecordType" Name="KeyValuePair" />
+                      <Choice Kind="OperationCallFlag" Name="Create" />
+                    </p:NodeReference>
+                    <Pin Id="NcnErw1tJB4NFuIgPbSPVB" Name="Key" Kind="InputPin" />
+                    <Pin Id="Lv7Tvjc7hlAMqeDnlFBzAs" Name="Value" Kind="InputPin" />
+                    <Pin Id="NnnjtvN81nyPyxwDzDUkqR" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="JeJlZFro6cDMeB7mezqfBR" Bounds="265,240" Alignment="Top" />
+                <ControlPoint Id="KvQfW2iMMEaLcRKjLNpwrD" Bounds="303,390" Alignment="Bottom" />
+              </Node>
+            </Canvas>
+            <!--
+
+    ************************ FixedFileInfo ************************
+
+-->
+            <Node Name="FixedFileInfo" Bounds="400,180,195,105" Id="D0nzFbrQpx6QRRDy1x0M1m" Summary="Contains version information for a file. This information is language and code page independent.">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="RTmsZ8Br19yNcRJblHnEom">
+                <Node Bounds="412,218,85,26" Id="JFgv3f9yRJ9MKP95HWCv7R">
+                  <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsVersionInfo" LastDependency="PeNet.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="VsVersionInfo" />
+                    <Choice Kind="OperationCallFlag" Name="VsFixedFileInfo" />
+                  </p:NodeReference>
+                  <Pin Id="JrCpEDrmSy8MvSrpQWzu9a" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="HjlfBrZK2gLPQ990YxePkA" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UN1psL1ObsxPPWCsozr6uE" Name="Vs Fixed File Info" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="Og65RH54FKfMYjiNPKXfqt" Bounds="414,198" />
+                <Pin Id="Os9QlqNswU8PJbDhwKG5Ka" Name="Input" Kind="InputPin" />
+                <Link Id="PbLBQUsJphtPF0Egctrl13" Ids="Og65RH54FKfMYjiNPKXfqt,JrCpEDrmSy8MvSrpQWzu9a" />
+                <Link Id="R5ZdSd29DmyOQhGlBswq6s" Ids="Os9QlqNswU8PJbDhwKG5Ka,Og65RH54FKfMYjiNPKXfqt" IsHidden="true" />
+                <ControlPoint Id="MkpT2OIjrYgLSXd31bEQH3" Bounds="494,268" />
+                <Link Id="OfhJGXS4MS3Mh2JAHQfyDK" Ids="UN1psL1ObsxPPWCsozr6uE,MkpT2OIjrYgLSXd31bEQH3" />
+                <Pin Id="C6coC2pB5lrMtHFCICVYlr" Name="Fixed File Info" Kind="OutputPin" />
+                <Link Id="HeEJOSHmwjSP26gBfbwih8" Ids="MkpT2OIjrYgLSXd31bEQH3,C6coC2pB5lrMtHFCICVYlr" IsHidden="true" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ StringFileInfo ************************
+
+-->
+            <Node Name="StringFileInfo" Bounds="400,420,183,105" Id="T1fjgO3AumlOX8Nf0qs0G1" Summary="Represents the organization of data in a file-version resource. It contains version information that can be displayed for a particular language and code page." Remarks="This structure is not a true C-language structure because it contains variable-length members. This structure was created solely to depict the organization of data in a version resource and does not appear in any of the header files shipped with the Windows Software Development Kit (SDK).&#xD;&#xA;&#xD;&#xA;The Children member of the VS_VERSIONINFO structure may contain zero or more StringFileInfo structures.">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="PvtygVQaOShPA0VZ6EkkMe">
+                <Node Bounds="412,458,85,26" Id="PaF6dP2cD7TMdbN3qzwzAP">
+                  <p:NodeReference LastCategoryFullName="PeNet.Header.Resource.VsVersionInfo" LastDependency="PeNet.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="VsVersionInfo" />
+                    <Choice Kind="OperationCallFlag" Name="StringFileInfo" />
+                  </p:NodeReference>
+                  <Pin Id="P5OTVGEMpoXQFox62e6Enk" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JquAyaFwesdPqRPkFFDICP" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="VkdvpAfJleDQIIpJprLz17" Name="String File Info" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="DCCcSqhxdhLO12Eue0SlZZ" Bounds="414,438" />
+                <Pin Id="J2MYdM3aLPdOgmiyJyyMvc" Name="Input" Kind="InputPin" />
+                <ControlPoint Id="DcCcScv9xWhPAr10g2nfWN" Bounds="494,508" />
+                <Pin Id="DnpBFAtfIneN9eLGwcL9p8" Name="String File Info" Kind="OutputPin" />
+                <Link Id="RpPjvkN5DSVPdJPJrvP3fE" Ids="DCCcSqhxdhLO12Eue0SlZZ,P5OTVGEMpoXQFox62e6Enk" />
+                <Link Id="FP97f1S9Ld4MNjukqLaJua" Ids="J2MYdM3aLPdOgmiyJyyMvc,DCCcSqhxdhLO12Eue0SlZZ" IsHidden="true" />
+                <Link Id="UT0RXzug24dOqTlfBgiw2P" Ids="DcCcScv9xWhPAr10g2nfWN,DnpBFAtfIneN9eLGwcL9p8" IsHidden="true" />
+                <Link Id="HsleZUprERhNcph4p2lNOg" Ids="VkdvpAfJleDQIIpJprLz17,DcCcScv9xWhPAr10g2nfWN" />
+              </Patch>
+            </Node>
+          </Canvas>
+        </Canvas>
+      </Canvas>
+      <Canvas Id="KluXafpUk0PPjJgWiMYQtT" Name="Utils" Position="508,470">
+        <!--
+
+    ************************ ToHexString ************************
+
+-->
+        <Node Name="ToHexString" Bounds="290,222,258,235" Id="TzYv2n9I0ofPfIvEk5W6AZ" Summary="Converts an unsigned Int32 to its Hex representation">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" />
+          </p:NodeReference>
+          <Patch Id="OZeihDOPhOdOBmbubxLlf1" ManuallySortedPins="true">
+            <Node Bounds="368,270,91,26" Id="BbAUskbkCJCL7WmCRXtagH">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32 (Unsigned)" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="UInt32Type" Name="Integer32 (Unsigned)" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="ToString (Hex)" />
+              </p:NodeReference>
+              <Pin Id="CTOxD5M0HxRLjyaQxz8SdT" Name="Input" Kind="StateInputPin" />
+              <Pin Id="E546L27YV1mOUgc12kHqeq" Name="Leading Zeroes" Kind="InputPin" DefaultValue="True" />
+              <Pin Id="JxOZ97FkXFrPDmEzPw0Svv" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="JcsX5Gh1VCNOzkYtPbxYUQ" Bounds="370,240" />
+            <Link Id="StY7PebaHgILTGScmA2NrW" Ids="JcsX5Gh1VCNOzkYtPbxYUQ,CTOxD5M0HxRLjyaQxz8SdT" />
+            <Pin Id="OkzXRASeEJfNTkHftg46E8" Name="Input" Kind="InputPin" />
+            <Link Id="HHciQUSgtD5OHzeufza1bi" Ids="OkzXRASeEJfNTkHftg46E8,JcsX5Gh1VCNOzkYtPbxYUQ" IsHidden="true" />
+            <ControlPoint Id="DAtIqrekqLUQcX0BTaQnVb" Bounds="456,240" />
+            <Link Id="Q80eictsoJJOCBRzswKGPv" Ids="DAtIqrekqLUQcX0BTaQnVb,E546L27YV1mOUgc12kHqeq" />
+            <Pin Id="NN4ZARZ4ULiQALdCWiZCdX" Name="Leading Zeroes" Kind="InputPin" />
+            <Link Id="BhpNDfSX70ALd1YX86oCoQ" Ids="NN4ZARZ4ULiQALdCWiZCdX,DAtIqrekqLUQcX0BTaQnVb" IsHidden="true" />
+            <Node Bounds="313,324,74,82" Id="GkBmAol9p6qQFl6o3GSXE8">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="FSTUbtnatkYMyZ7qpNx3UD" Name="Condition" Kind="InputPin" />
+              <Patch Id="HpZ7LqTIEumMwYhpbQELRF" ManuallySortedPins="true">
+                <Patch Id="R1z2AC5jFIQMUy0IcMvwFf" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="DsKoI2gItfNL87I82dK7eA" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="325,360,48,19" Id="GPBlXhOlEqxLw4E8PkCdnx">
+                  <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Format" />
+                  </p:NodeReference>
+                  <Pin Id="Q4ChOwU6DoiPlDC9tL7pde" Name="Format" Kind="InputPin" DefaultValue="0x{0}" />
+                  <Pin Id="PHsFUlSMhEuOnJxCj7T1Sl" Name="Input" Kind="InputPin" />
+                  <Pin Id="AN8fJXtohurOGzlhMcUlXy" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="Ri7Iz2B80iOLykYalcRPrF" Bounds="370,330" Alignment="Top" />
+              <ControlPoint Id="UKDMX1e7DZKOXNF8LinHA4" Bounds="327,400" Alignment="Bottom" />
+            </Node>
+            <Link Id="ITG4wYcq4YkMMRS56UgZO9" Ids="Ri7Iz2B80iOLykYalcRPrF,UKDMX1e7DZKOXNF8LinHA4" IsFeedback="true" />
+            <Link Id="RJnYaGNEmh8LiHzyAffaRP" Ids="JxOZ97FkXFrPDmEzPw0Svv,Ri7Iz2B80iOLykYalcRPrF" />
+            <Link Id="PkE6LY5yy87NZFQFlfVRjo" Ids="Ri7Iz2B80iOLykYalcRPrF,PHsFUlSMhEuOnJxCj7T1Sl" />
+            <Link Id="Vxto0oWZKznNqM8jTkTKU7" Ids="AN8fJXtohurOGzlhMcUlXy,UKDMX1e7DZKOXNF8LinHA4" />
+            <ControlPoint Id="TwlMaA93Tq9QF58bQj6814" Bounds="315,240" />
+            <Link Id="LZvrG3xEBVdPbLGUmdupba" Ids="TwlMaA93Tq9QF58bQj6814,FSTUbtnatkYMyZ7qpNx3UD" />
+            <Link Id="MM4349Y2GWrM5tv5DBu6HZ" Ids="UKDMX1e7DZKOXNF8LinHA4,RzGe5aL3s0KLb6qsVgKGRs" />
+            <ControlPoint Id="RzGe5aL3s0KLb6qsVgKGRs" Bounds="327,440" />
+            <Pin Id="JDwmTse165cPMdRslOmI7X" Name="Output" Kind="OutputPin" />
+            <Link Id="IfBekYWdam5PLbSajYsUPO" Ids="RzGe5aL3s0KLb6qsVgKGRs,JDwmTse165cPMdRslOmI7X" IsHidden="true" />
+            <Pin Id="DWiN6HYMSDDNFlbgCK3Kep" Name="Prefix" Kind="InputPin" />
+            <Link Id="TZ3qr6ACeaQNmjuwnejQpG" Ids="DWiN6HYMSDDNFlbgCK3Kep,TwlMaA93Tq9QF58bQj6814" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ SplitDword ************************
+
+-->
+        <Node Name="SplitDword" Bounds="347,542,115,195" Id="MQpziT7XGCbLA9cpnONCic">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" />
+          </p:NodeReference>
+          <Patch Id="J4Vvi2qvTGnL8RiseMeymU">
+            <Node Bounds="359,610,31,19" Id="Hd69i3jWjEgQYH10SZVzmW">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32 (Unsigned)" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="UInt32Type" Name="Integer32 (Unsigned)" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="&gt;&gt;" />
+              </p:NodeReference>
+              <Pin Id="UZBOWV5JoOgMnu0yRx3SNI" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Qx4FNBqHyB8Pw2OIrkgSTs" Name="Input 2" Kind="InputPin" DefaultValue="16" />
+              <Pin Id="AhkfyGpFNm0PYSHGw8gtHj" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="Upy7wxMg8NXPY597Ink6IR" Comment="" Bounds="387,590,35,15" ShowValueBox="true" isIOBox="true" Value="16">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="359,670,25,19" Id="O1S1FlmxKhnNAKYDCXby4v">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32 (Unsigned)" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="UInt32Type" Name="Integer32 (Unsigned)" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="&amp;" />
+              </p:NodeReference>
+              <Pin Id="K2zycS88BflL7rrnQmPi1I" Name="Input" Kind="StateInputPin" />
+              <Pin Id="P1Lw7JYJh9oLC4hPSdy5iI" Name="Input 2" Kind="InputPin" />
+              <Pin Id="VL3Z6XYpF1JOZ2rBtkXgAW" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="E3TfJWqdy9BOSg8Tk7pnJ5" Comment="" Bounds="396,640,35,15" ShowValueBox="true" isIOBox="true" Value="65535">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32 (Unsigned)" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="411,670,25,19" Id="Gprr5csabsKL0tjRqGFJHp">
+              <p:NodeReference LastCategoryFullName="Primitive.Integer32 (Unsigned)" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="UInt32Type" Name="Integer32 (Unsigned)" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="&amp;" />
+              </p:NodeReference>
+              <Pin Id="LoxSK7rI7PmLHN3bftir7Z" Name="Input" Kind="StateInputPin" />
+              <Pin Id="HHqTkNZlgjHQVjbdrjxmav" Name="Input 2" Kind="InputPin" />
+              <Pin Id="JBWlLJKT6yjLpxRtjasQye" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="FDGpO6OasPfPZ72mxsgKmY" Ids="Upy7wxMg8NXPY597Ink6IR,Qx4FNBqHyB8Pw2OIrkgSTs" />
+            <Link Id="Edxe3s6OJHCQPquwirkaM2" Ids="E3TfJWqdy9BOSg8Tk7pnJ5,P1Lw7JYJh9oLC4hPSdy5iI" />
+            <Link Id="CFgcl3lpkV9PplmI2ibIXl" Ids="E3TfJWqdy9BOSg8Tk7pnJ5,HHqTkNZlgjHQVjbdrjxmav" />
+            <Link Id="IMicmoQDYOjPxLCXOz1BOJ" Ids="AhkfyGpFNm0PYSHGw8gtHj,K2zycS88BflL7rrnQmPi1I" />
+            <ControlPoint Id="LgulZppDoncP2vdsidhlXU" Bounds="361,560" />
+            <Link Id="NSo5exKenAhPvvGx1qvz8n" Ids="LgulZppDoncP2vdsidhlXU,UZBOWV5JoOgMnu0yRx3SNI" />
+            <Pin Id="HFbdRPJd2tBLE12qJkKbe8" Name="Input" Kind="InputPin" />
+            <Link Id="EOqSa1D1KXkLRL64WRAtIq" Ids="HFbdRPJd2tBLE12qJkKbe8,LgulZppDoncP2vdsidhlXU" IsHidden="true" />
+            <ControlPoint Id="QDazPKnGX8cLXYgTJgtNQT" Bounds="361,720" />
+            <Link Id="S6VoE0iKnWOQQVIjQlilee" Ids="VL3Z6XYpF1JOZ2rBtkXgAW,QDazPKnGX8cLXYgTJgtNQT" />
+            <Pin Id="KGhIF2vyAm7PhANsUs1VFi" Name="High" Kind="OutputPin" />
+            <Link Id="RDWbnUe7oYKPzBmSdUjcbL" Ids="QDazPKnGX8cLXYgTJgtNQT,KGhIF2vyAm7PhANsUs1VFi" IsHidden="true" />
+            <Pin Id="MRQIC8Cg9ViLe5ejLXd5Vs" Name="Low" Kind="OutputPin" />
+            <ControlPoint Id="M8goVK74wS2MwZhRESSmZl" Bounds="413,720" />
+            <Link Id="IHTAptAF45cOwzLK4HQZ9J" Ids="JBWlLJKT6yjLpxRtjasQye,M8goVK74wS2MwZhRESSmZl" />
+            <Link Id="SEwbwUXTrLSNNyfIH6Fs0k" Ids="M8goVK74wS2MwZhRESSmZl,MRQIC8Cg9ViLe5ejLXd5Vs" IsHidden="true" />
+            <Link Id="GN2nL7qPxe9PLGCRrGqMMZ" Ids="LgulZppDoncP2vdsidhlXU,LoxSK7rI7PmLHN3bftir7Z" />
+          </Patch>
+        </Node>
       </Canvas>
     </Canvas>
     <!--
@@ -809,6 +1662,8 @@
         </ProcessDefinition>
       </Patch>
     </Node>
+    <Link Id="MKokhg8jPhsPvRFqQ43CCE" Ids="JeJlZFro6cDMeB7mezqfBR,AambAoMCYPaPyp9Jw5vMvg" />
+    <Link Id="UOpTmj1cUo4Njzy6dQbXQP" Ids="NnnjtvN81nyPyxwDzDUkqR,KvQfW2iMMEaLcRKjLNpwrD" />
   </Patch>
   <NugetDependency Id="VLow1OgbuQFP1jo487Y1Rf" Location="PeNet" Version="5.1.0" />
   <PlatformDependency Id="QVJGkOKKg2cQKnIo0WQ9r9" Location="System.Text.Json" />
