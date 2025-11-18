@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="OQTURL4CMwnMQcBRiehziq" LanguageVersion="2025.7.1-0084-ga7be0d05a8" Version="0.128">
-  <NugetDependency Id="LhgL7EDV6VALTWWbIrPML5" Location="VL.CoreLib" Version="2025.7.1-0084-ga7be0d05a8" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="OQTURL4CMwnMQcBRiehziq" LanguageVersion="2025.7.1-0103-gf49d596041" Version="0.128">
+  <NugetDependency Id="LhgL7EDV6VALTWWbIrPML5" Location="VL.CoreLib" Version="2025.7.1-0103-gf49d596041" />
   <Patch Id="Al8VJPgkGBzLOYQTCm3tKL">
     <Canvas Id="UMsHjDYIa8yMJmLndPjYh3" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -52,18 +52,18 @@
             <Pin Id="LVJwi7iGIEnMKgpnp4xWdJ" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="NB4k440jpnIMkTNQMEl3nO" Name="Imported Functions" Kind="OutputPin" />
           </Node>
-          <Node Bounds="441,340,64,26" Id="BXqiNOpMwYBOwi2R2DczK5">
+          <Node Bounds="441,340,92,26" Id="BXqiNOpMwYBOwi2R2DczK5">
             <p:NodeReference LastCategoryFullName="PE.PeFile.NTHeader" LastDependency="VL.PeNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="FileHeader" />
+              <Choice Kind="OperationCallFlag" Name="ImageFileHeader" />
             </p:NodeReference>
             <Pin Id="BiK4ihnaQpYOUdIqxW9Sr5" Name="PE File" Kind="InputPin" />
-            <Pin Id="Jizo5CFv1S9MT7USrlRUVR" Name="File Header" Kind="OutputPin" />
+            <Pin Id="Jizo5CFv1S9MT7USrlRUVR" Name="Image File Header" Kind="OutputPin" />
           </Node>
-          <Node Bounds="557,340,87,26" Id="IMXYjr6P2s6OShJsr1w2e0">
+          <Node Bounds="557,340,115,26" Id="IMXYjr6P2s6OShJsr1w2e0">
             <p:NodeReference LastCategoryFullName="PE.PeFile.NTHeader" LastDependency="VL.PeNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="OptionalHeader" />
+              <Choice Kind="OperationCallFlag" Name="ImageOptionalHeader" />
             </p:NodeReference>
             <Pin Id="OzR6xVrVjxvOpbNTWrQfiK" Name="PE File" Kind="InputPin" />
             <Pin Id="AJFRQKNggDAPidtksUpTaE" Name="Optional Header" Kind="OutputPin" />
@@ -89,9 +89,9 @@
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="Oz9HfDw7iThMNDqcQDa93W" Name="Machine Type" Kind="OutputPin" />
-            <Pin Id="FSnv1S6QBPINScZwFQhLPb" Name="Compiler Stamp" Kind="OutputPin" />
             <Pin Id="HxDXvPwPatXMWe98Yy0968" Name="Number Of Sections" Kind="OutputPin" />
             <Pin Id="N81cWPjyIDnLa4vZVN5gmb" Name="PE File" Kind="InputPin" />
+            <Pin Id="FSnv1S6QBPINScZwFQhLPb" Name="Compiler Stamp" Kind="OutputPin" />
           </Node>
           <Node Bounds="557,410,85,26" Id="Qx4vZBUEUNONyh9zDPGQ3e">
             <p:NodeReference LastCategoryFullName="PE.PeFile.NTHeader.OptionalHeader" LastDependency="VL.PeNet.vl">
@@ -182,7 +182,7 @@
           </Pad>
           <Pad Id="Txbwg45NPo2NECv4YmQ9iK" Comment="File Flags Mask" Bounds="1164,580,129,48" ShowValueBox="true" isIOBox="true" />
           <Pad Id="VvhBoGN34fSMd9JHuO6WXE" Comment="File Flags" Bounds="1184,530,108,37" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1175,410,76,26" Id="Boi7HtfrffZNkYfMXurvOX">
+          <Node Bounds="1451,410,76,26" Id="Boi7HtfrffZNkYfMXurvOX">
             <p:NodeReference LastCategoryFullName="PE.PeFile.Resources.VersionInfo" LastDependency="VL.PeNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="StringFileInfo" />
