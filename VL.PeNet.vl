@@ -246,7 +246,7 @@
         </Patch>
       </Node>
       <Canvas Id="DIMdIXPl81VPc63zXNSAcN" Name="PeFile" Position="508,420">
-        <Canvas Id="HEjtICJgjciLJDKVQ0UJ5I" Name="ImportedFunctions" Position="452,300">
+        <Canvas Id="HEjtICJgjciLJDKVQ0UJ5I" Name="ImportedFunctions" Position="449,300">
           <!--
 
     ************************ ImportedFunctions ************************
@@ -312,7 +312,7 @@
             </Patch>
           </Node>
         </Canvas>
-        <Canvas Id="B4OEt1vsB13MDiNZjlbsd6" Name="NTHeader" Position="452,350">
+        <Canvas Id="B4OEt1vsB13MDiNZjlbsd6" Name="NTHeader" Position="449,352">
           <Canvas Id="JBIBn013QLDLJ0iGtorCGh" Name="FileHeader" Position="385,240">
             <!--
 
@@ -743,7 +743,7 @@
             </Patch>
           </Node>
         </Canvas>
-        <Canvas Id="Em882BWQZK2MDDqo3A76HZ" Name="SectionHeader" Position="452,400">
+        <Canvas Id="Em882BWQZK2MDDqo3A76HZ" Name="SectionHeader" Position="449,404">
           <!--
 
     ************************ SectionHeaders ************************
@@ -800,7 +800,7 @@
             </Patch>
           </Node>
         </Canvas>
-        <Canvas Id="DVbXQD7gmQHLNssTSYzqd7" Name="Resources" Position="452,450">
+        <Canvas Id="DVbXQD7gmQHLNssTSYzqd7" Name="Resources" Position="449,456">
           <!--
 
     ************************ Resources ************************
@@ -1536,7 +1536,7 @@
             </Canvas>
           </Canvas>
         </Canvas>
-        <Canvas Id="N5b2wJW7desLzfueEubpxy" Name="ResourceDirectory" Position="486,480">
+        <Canvas Id="N5b2wJW7desLzfueEubpxy" Name="ResourceDirectory" Position="449,508">
           <!--
 
     ************************ ImageResourceDirectory ************************
